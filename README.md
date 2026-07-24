@@ -5,3 +5,7 @@ AI-driven open-source video editing tool
 
 即将开源，敬请期待，欢迎加群
 
+![qrcode](qrcode.png)
+
+![editor](editor.png)
+
