@@ -21,86 +21,61 @@ vite: [https://vitejs.cn/guide/](https://vitejs.cn/guide/)
 # 项目源码说明
 
 # 目录结构说明：
+
 ```
-├─dist 打包后生成的文件（执行yarn build后才会生成）
-│  ├─assets 公共资源文件
-│  │  ├─ai 
-│  │  │  ├─matting  ai抠图代码
-│  │  │  └─onnxruntime-web ai涂抹代码
-│  │  ├─ffmpeg12 ffmpeg代码
-│  │  ├─images 图片资源
-│  │  └─worker 解码代码
-│  └─homeAssets 打包后资源
-│      ├─css  
-│      ├─jpg
-│      ├─js
-│      └─png
-├─public 静态资源文件夹
-│  └─assets
-│      ├─ai
-│      │  ├─matting ai抠图代码
-│      │  └─onnxruntime-web ai涂抹代码
-│      ├─ffmpeg12 ffmpeg代码
-│      ├─images 图片资源
-│      └─worker 解码代码
-├─src 项目源代码
-│  ├─assets 图片等资源
-│  │  └─images 图片资源
-│  ├─components 公共组件
-│  │  ├─audio 音频相关组件
-│  │  ├─content 我的草稿和我的素材公用容器组件
-│  │  ├─content-user 我的账号和我的消息公用容器组件
-│  │  ├─footer 网站底部
-│  │  ├─header 网站头部
-│  │  │  └─user 头部右侧的下拉信息框
-│  │  ├─login 登录
-│  │  │  ├─loginMobile 手机登录
-│  │  │  ├─loginQrcode 二维码登录
-│  │  │  └─loginRegisterBox 登录容器框
-│  │  ├─not-found 找不到的提示页面
-│  │  ├─page-loading 页面加载loading
-│  │  ├─sub-header banner组件
-│  │  └─water-full 素材资源展示组件
-│  ├─config 配置文件
-│  ├─layout 布局
-│  │  ├─home-layout 首页布局
-│  │  ├─index-layout  关于我们布局
-│  │  ├─user-layout 用户中心布局
-│  │  │  └─sidebar 左侧导航
-│  │  │      └─cropUpload 截图
-│  │  └─workspace-layout 我的空间布局
-│  │      └─sidebar 左侧导航
-│  ├─less 基础less文件
-│  ├─pages 页面
-│  │  ├─aboutus 关于我们
-│  │  ├─home 首页
-│  │  ├─tools 快捷工具页面
-│  │  │  ├─ai-matting ai抠图
-│  │  │  └─ai-rubber ai涂抹
-│  │  ├─user  个人中心
-│  │  │  ├─account 账号设置
-│  │  │  └─message 消息中心
-│  │  └─workspace 我的空间
-│  │      └─user 个人用户空间
-│  │          ├─draft 我的草稿
-│  │          └─material 我的素材
-│  ├─server  请求
-│  ├─stores mobx的store
-│  ├─theme 主题
-│  └─utils 公共方法
-├─ssh 本地开发https使用
-├─editorconfig 编辑器配置文件
-├─.gitignore git提交忽略文件
-├─copy.js 打包后复制处理文件
-├─index.html 入口html文件
-├─nodeExternals.js 处理package.json文件
-├─packages.json npm包配置文件
-├─readme.md 项目说明文档
-├─tsconfig.json ts配置文件 
-├─tsconfig.node.json 用于vite.config.ts的ts配置文件
-├─vite.config.ts vite打包配置文件
-└─viteConfig.ts vite公共配置文件（暂时未使用）
+src/
+├── assets/                        # 静态资源（图片、logo等）
+├── components/                    # 公共组件
+│   ├── audio/                     # 音频播放组件
+│   ├── content/                   # 素材内容面板（图片/视频分割、文件夹、资源列表）
+│   ├── content-user/              # 用户素材内容面板
+│   ├── folder-guard/              # 文件夹组件
+│   ├── footer/                    # 页脚
+│   ├── header/                    # 顶部导航（含用户信息）
+│   ├── login/                     # 登录/注册（邮箱、手机、二维码登录）
+│   ├── not-found/                 # 404页面
+│   ├── page-loading/              # 页面加载
+│   ├── sub-header/                # 子导航
+│   └── water-full/                # 瀑布流布局
+├── config/                        # 配置（SDK类型定义、初始化数据）
+├── database/                      # 本地数据库（IndexedDB）
+├── hooks/                         # 自定义Hooks
+├── language/                      # 国际化（中/英文）
+├── layout/                        # 页面布局
+│   ├── agreement-layout/          # 协议页布局
+│   ├── home-layout/               # 首页布局
+│   ├── index-layout/              # 入口页布局
+│   ├── user-layout/               # 用户中心布局
+│   └── workspace-layout/          # 工作区布局
+├── less/                          # 全局样式变量
+├── pages/                         # 页面模块
+│   ├── aboutus/                   # 关于我们
+│   ├── agreement/                 # 协议页（用户协议、隐私政策、VIP服务）
+│   ├── editor/                    # 编辑器（核心模块）
+│   │   ├── common/                # 编辑器通用组件（拖拽、加载、排序、资源面板）
+│   │   ├── components/            # 编辑器子组件
+│   │   │   ├── ai-chat/           # AI对话
+│   │   │   ├── canvas/            # 画布（播放器、右键菜单、动画路径）
+│   │   │   ├── header/            # 编辑器顶栏（导出、项目、用户、键盘快捷键）
+│   │   │   ├── options/           # 属性面板（动画、滤镜、蒙版、抠图等）
+│   │   │   ├── replace-tpl/       # 替换模板
+│   │   │   ├── sidebar/           # 侧边栏
+│   │   │   ├── sources/           # 素材面板（AI素材、音频、字幕、特效、图片、文字、视频等）
+│   │   │   └── timeline2/         # 时间轴（轨道、工具栏：抠图/橡皮擦/裁剪等AI工具）
+│   │   └── tools/                 # 工具函数（音频波形、上传处理）
+│   ├── home/                      # 首页
+│   ├── user/                      # 用户中心（账号、消息）
+│   └── workspace/                 # 工作区（草稿、素材、作品管理）
+├── server/                        # API服务层
+├── services/                      # 客户端服务（本地存储）
+├── stores/                        # 状态管理（Mobx：编辑器、用户、布局、音频）
+├── theme/                         # 主题系统（亮色/暗色）
+├── utils/                         # 工具函数（鉴权、加解密、导出、日志上报、事件总线）
+├── App.tsx                        # 应用根组件
+├── main.tsx                       # 应用入口
+└── routes.config.ts               # 路由配置
 ```
+
 # 项目开发说明：
 
 当前目录执行yarn dev,启动开发环境（备注：如果没有在最外层执行过一次yarn install, 需要先在最外层执行以上命令，然后才可以在目录下执行yarn dev启动命令）
