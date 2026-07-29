@@ -36,6 +36,7 @@
 
   .logoNav {
     display: flex;
+    align-items: center;
     .logo {
       display: inline-block;
       width: 160px;
@@ -54,15 +55,19 @@
       background-size: cover;
     }
     .nav {
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
       .text {
-        display: inline-block;
-        margin-left: 40px;
+        margin-left: 24px;
         height: 55px;
         line-height: 55px;
         font-family: Inter;
         font-size: 14px;
         font-weight: 500;
         color: var(--theme-text);
+        display: inline-flex;
+        align-items: center;
       }
       .active {
         border-bottom: solid 2px var(--theme-text-active);
