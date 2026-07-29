@@ -1,10 +1,4 @@
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./public/assets/images/logow.png" />
-    <source media="(prefers-color-scheme: light)" srcset="./public/assets/images/logob.png" />
-    <img src="./public/assets/images/logob.png" alt="UNICUT 无界云剪" height="52" />
-  </picture>
-
   <h1>UNICUT · 无界云剪</h1>
 
   <p><strong>AI 驱动的开源 Web 视频编辑器</strong></p>
