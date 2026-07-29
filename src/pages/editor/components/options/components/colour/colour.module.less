@@ -1,0 +1,50 @@
+.colour {
+  height: 100%;
+  overflow: auto;
+}
+
+.fillOption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.lutGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.lutItem {
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.lutItem img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.lutItem:hover {
+  border-color: var(--semi-color-primary);
+}
+
+.lutItemActive {
+  border-color: var(--semi-color-primary);
+}
+
+.lutName {
+  display: block;
+  font-size: 10px;
+  padding: 2px 0 4px;
+  color: var(--semi-color-text-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

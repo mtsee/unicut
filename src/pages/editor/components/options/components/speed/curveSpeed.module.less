@@ -1,0 +1,157 @@
+.duration {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #999;
+  i {
+    font-style: normal;
+  }
+  em {
+    font-weight: bolder;
+    color: var(--theme-text);
+  }
+}
+
+.points {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  top: 10px;
+  left: 10px;
+  span {
+    display: inline-block;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: red;
+  }
+}
+
+.btns {
+  margin-top: 10px;
+  text-align: right;
+  .btn {
+    width: 26px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    background: var(--theme-input);
+    padding: 1px 0 3px 0;
+    border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+      background: var(--theme-main);
+    }
+  }
+}
+
+.curveSpeedBox {
+  width: 100%;
+}
+
+.curveSpeedItems {
+  margin-bottom: 20px;
+  section {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
+.curveSpeed {
+  margin-left: 20px;
+  width: 240px;
+  height: 200px;
+  //   overflow: hidden;
+  position: relative;
+  .names {
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    height: calc(100% - 20px);
+    width: 0;
+    opacity: 0.7;
+    .name1,
+    .name2,
+    .name3 {
+      margin-top: -10px;
+      position: absolute;
+      font-size: 12px;
+    }
+    .name1 {
+      top: 0;
+    }
+    .name2 {
+      top: 50%;
+    }
+    .name3 {
+      top: 100%;
+    }
+  }
+  .cursor {
+    pointer-events: none;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    z-index: 0;
+    left: 10px;
+    top: 10px;
+    span {
+      top: 0;
+      position: absolute;
+      display: block;
+      width: 1px;
+      background-color: #fff;
+      height: 100%;
+    }
+  }
+  .dots {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 100;
+    left: 10px;
+    top: 10px;
+    .dot {
+      cursor: pointer;
+      border: 2px solid #54a9ff;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: #000;
+      border-radius: 100px;
+      margin: -7px 0 0 -7px;
+      position: absolute;
+    }
+  }
+  .lines {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    top: 10px;
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    .line1,
+    .line2,
+    .line3 {
+      position: absolute;
+      height: 0;
+      display: block;
+      width: 100%;
+      margin-top: -0.5px;
+      border-bottom: 1px dashed #393939;
+    }
+    .line1 {
+      top: 45px;
+    }
+    .line2 {
+      top: 90px;
+    }
+    .line3 {
+      top: 135px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.about {
+  background-color: var(--theme-bg4);
+  color: var(--theme-text);
+  min-height: 100vh;
+  padding-top: 60px;
+  .content {
+    max-width: 1000px;
+    margin: 40px auto;
+    color: var(--theme-text);
+    text-align: center;
+
+    h1 {
+      margin: 40px 0;
+      font-size: 24px;
+      font-weight: bolder;
+    }
+
+    p {
+      line-height: 40px;
+      a {
+        display: inline-block;
+        background-color: var(--theme-bg3);
+        color: var(--theme-main);
+        font-size: 14px;
+        padding: 0 10px;
+        border-radius: 100px;
+      }
+
+      .phone {
+        color: var(--theme-main);
+        padding: 0;
+        background-color: transparent;
+        font-size: 16px;
+      }
+    }
+  }
+  .map {
+    height: 300px;
+    position: relative;
+    bottom: -20px;
+    // pointer-events: none;
+  }
+}

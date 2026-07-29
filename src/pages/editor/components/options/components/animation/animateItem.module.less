@@ -1,0 +1,39 @@
+.item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #ccc;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  display: none;
+  // background-image: url(/assets/editor-images/animation.png);
+  background-size: 100%;
+}
+
+.itemText {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  .abc{
+    display: block;
+    font-size: 16px;
+    opacity: 0.5;
+    font-weight: bolder;
+    position: relative;
+    padding: 20px 0;
+    i{
+      display: inline-block;
+      position: relative;
+      opacity: 0;
+      font-style: normal;
+      animation-timing-function: linear;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: both;
+    }
+  }
+}

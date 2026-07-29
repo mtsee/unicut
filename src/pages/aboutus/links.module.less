@@ -1,0 +1,24 @@
+.links {
+  // background-color: rgb(255, 255, 255);
+  position: relative;
+  bottom: -20px;
+  .linksSwiper {
+    overflow: hidden;
+  }
+  .linkitem {
+    filter: grayscale(1);
+    opacity: 0.5;
+    // transition: 0.5s;
+    img {
+      filter: var(--theme-linkicon-filter);
+    }
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      filter: grayscale(0);
+      opacity: 1;
+      img {
+        filter: invert(0);
+      }
+    }
+  }
+}

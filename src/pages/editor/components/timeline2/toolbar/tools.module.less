@@ -1,0 +1,149 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--theme-bg);
+  height: 40px;
+  padding: 0 10px;
+
+  & > div {
+    & > a,
+    & > section {
+      font-size: 10px;
+      display: inline-block;
+      margin: 5px;
+      opacity: 0.5;
+    }
+    & > a {
+      pointer-events: none;
+    }
+    .enable {
+      pointer-events: initial;
+      opacity: 1;
+    }
+  }
+
+  .left {
+  }
+
+  .right {
+  }
+
+  :global {
+    .semi-slider-wrapper {
+      height: 25px;
+    }
+  }
+}
+
+.fireIcon {
+  position: absolute;
+  top: 0px;
+  margin-left: -3px;
+}
+
+.button {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  // overflow: hidden;
+}
+
+// 帧
+.frameCopy,
+.frameDot {
+  i,
+  span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--theme-icon);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  em {
+    display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: var(--theme-icon);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    position: relative;
+    transform: rotate(45deg);
+    margin-left: -10px;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 2px;
+      background-color: black;
+      position: absolute;
+      top: 6px;
+      left: 3px;
+      transform: rotate(315deg);
+    }
+  }
+  i {
+    border-radius: 4px;
+    position: relative;
+    transform: rotate(45deg);
+    margin-left: -10px;
+  }
+  i:nth-child(1) {
+    margin-left: 0;
+  }
+  i:nth-child(2) {
+    opacity: 0.4;
+  }
+  i:nth-child(3) {
+    opacity: 0.2;
+  }
+}
+
+.frameCopy i {
+  opacity: 1 !important;
+  background-color: var(--theme-bg);
+  border: 2px solid var(--theme-icon);
+}
+.frameCopy .icopy {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--theme-bg);
+  border: 2px solid var(--theme-icon);
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+
+.loadingRun {
+  animation: rotateInfinite 1s linear 0s infinite;
+}
+
+@keyframes rotateInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.frameSyncContent {
+  padding: 10px;
+  color: var(--theme-text);
+
+  .frameItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    & > span {
+      opacity: 0.6;
+      display: inline-block;
+      width: 100px;
+    }
+  }
+}

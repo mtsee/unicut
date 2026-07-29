@@ -1,0 +1,31 @@
+// ========== 积分充值主题变量（蓝色主题）==========
+@aside-bg: #f3f7ff;
+@aside-line-bg: #dbe3f0;
+@line-bg: #dce7fb;
+@package-border: #b8cffd;
+@package-hover-border: #ff481e;
+@package-active-border: #ff481e;
+@package-active-bg: #fffafa;
+@package-active-shadow: 0 8px 18px rgba(255, 72, 30, 0.12);
+@package-check-bg: #ff481e;
+
+@import './rechargeCommon.module.less';
+
+// Modal 透明背景
+.rechargeModal {
+  :global {
+    .semi-modal {
+      background: transparent;
+    }
+  }
+}
+
+// 积分版没有原价 del 样式，隐藏
+.packages button del {
+  display: none;
+}
+
+// 倒计时样式
+.countdown {
+  color: #8a8f99 !important;
+}

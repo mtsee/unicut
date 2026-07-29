@@ -1,0 +1,277 @@
+// 主题色变量（由各主题文件在 @import 之前定义）
+// @aside-bg
+// @aside-line-bg
+// @line-bg
+// @package-border
+// @package-hover-border
+// @package-active-border
+// @package-active-bg
+// @package-active-shadow
+// @package-check-bg
+
+.rechargeModal {
+  :global {
+    .semi-modal {
+      padding: 0;
+      border: 0;
+    }
+
+    .semi-modal-body-wrapper {
+      padding: 0;
+      margin: 0;
+    }
+
+    .semi-modal-content {
+      padding: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+    }
+
+    .semi-modal-body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .semi-modal-close {
+      z-index: 2;
+      color: #000;
+    }
+  }
+}
+
+.recharge {
+  color: #222;
+  background: #fff;
+  padding: 32px 40px;
+}
+
+.header {
+  margin: 0 0 28px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #1d2129;
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 4px;
+    background: linear-gradient(180deg, #ff6a32 0%, #ffb088 100%);
+    border-radius: 2px;
+  }
+
+  .subtitle {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8f99;
+  }
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+
+  button {
+    position: relative;
+    // min-height: 180px;
+    padding: 24px 12px 24px;
+    overflow: hidden;
+    border: 1px solid @package-border;
+    border-radius: 5px;
+    background: #fff;
+    color: #222;
+    text-align: center;
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      box-shadow 0.2s,
+      background 0.2s;
+
+    strong,
+    span,
+    em,
+    small,
+    del {
+      display: block;
+    }
+
+    strong {
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    em {
+      color: #ef3c47;
+      font-size: 32px;
+      font-style: normal;
+      line-height: 1;
+
+      i {
+        margin-right: 2px;
+        font-size: 18px;
+        font-style: normal;
+      }
+    }
+
+    del {
+      margin-top: 6px;
+      color: #999;
+      font-size: 12px;
+    }
+
+    span {
+      margin-top: 0;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    small {
+      margin-top: 6px;
+      color: #777;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    b {
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      display: none;
+      width: 52px;
+      height: 46px;
+      clip-path: polygon(100% 0, 100% 100%, 0 100%);
+      background: @package-check-bg;
+
+      :global {
+        .i-icon {
+          margin-top: 20px;
+          margin-right: -24px;
+        }
+      }
+    }
+
+    &:hover {
+      border-color: @package-hover-border;
+    }
+  }
+
+  .active {
+    border-color: @package-active-border;
+    background: @package-active-bg;
+    box-shadow: @package-active-shadow;
+
+    b {
+      display: block;
+    }
+  }
+}
+
+.pay {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 32px;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 12px;
+  // box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  // border: 1px solid rgba(255, 106, 50, 0.08);
+}
+
+.qrcodeBox {
+  width: 160px;
+  text-align: center;
+}
+
+.qrcode {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+}
+
+.qrCountdown {
+  margin: 12px 0 0;
+  color: #8a8f99;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.payInfo {
+  p {
+    margin: 0 0 20px;
+    color: #1d2129;
+    font-size: 20px;
+    font-weight: 600;
+
+    strong {
+      margin-left: 12px;
+      color: #ff6a32;
+      font-size: 32px;
+      font-weight: 800;
+    }
+  }
+}
+
+.channels {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .wechat {
+    background: #33c34a;
+  }
+
+  .alipay {
+    background: #19a8f5;
+  }
+
+  em {
+    color: #8a8f99;
+    font-size: 14px;
+    font-style: normal;
+  }
+}
+
+.status {
+  color: #8a8f99 !important;
+  font-size: 14px !important;
+}

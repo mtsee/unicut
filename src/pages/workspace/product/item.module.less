@@ -1,0 +1,136 @@
+body {
+  :global {
+    .adm-list-default .adm-list-body {
+      border-top: none;
+      border-bottom: none;
+    }
+    .adm-list-item {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}
+
+.item {
+  border-radius: 10px;
+  position: relative;
+
+  .more{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+  }
+
+  .tip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 100;
+    display: flex;
+    i {
+      margin-left: 5px;
+      margin-top: -2px;
+      font-style: normal;
+    }
+  }
+
+  .context {
+    position: relative;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-input);
+    border-radius: 6px;
+
+    .video {
+      width: 90px;
+      height: 136px;
+      border-radius: 6px;
+      background-size: cover;
+      background-position: center;
+      background-color: #000;
+    }
+  }
+
+  h1 {
+    margin-top: 10px;
+    // padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--theme-text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .info {
+    color: var(--theme-text);
+    span {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date {
+    font-size: 12px;
+    opacity: 0.6;
+    color: var(--theme-text);
+    :global {
+      .i-icon {
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  .btns {
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      color: var(--theme-main);
+      // background-color: var(--theme-main);
+      // border: 1px solid #383939;
+    }
+  }
+
+  .moreBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .rotate {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    animation: rotateFrame 1s linear 0s infinite;
+  }
+}
+
+.downHref {
+  word-break: break-all; /* 任意字符处都可换行 */
+  width: 100%;
+}
+
+@keyframes rotateFrame {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

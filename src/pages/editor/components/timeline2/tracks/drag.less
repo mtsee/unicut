@@ -1,0 +1,29 @@
+.tempInsertDom {
+  height: 13px;
+  position: absolute;
+  width: 100%;
+//   background: rgba(255, 0, 0, 0.3);
+  z-index: 200;
+}
+.tempInsertDomActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  &::after {
+    display: block;
+    width: 100%;
+    content: '';
+    height: 2px;
+    background-color: aqua;
+  }
+}
+
+.tempCanInDom {
+  height: 13px;
+  position: absolute;
+  width: 100%;
+  background: rgba(0, 255, 0, 0.3);
+  z-index: 200;
+}

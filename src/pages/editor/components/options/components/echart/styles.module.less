@@ -1,0 +1,70 @@
+.colors {
+  margin-bottom: 20px;
+  // background-color: var(--theme-input);
+}
+
+.content {
+  height: 100%;
+  overflow: auto;
+}
+
+.colorItem {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.colorsGroup {
+  padding: 10px;
+  .colorTheme {
+    &:hover {
+      background-color: var(--theme-bg3);
+    }
+  }
+}
+
+.legendGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colorTheme {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  background-color: var(--theme-input);
+  margin-bottom: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+  .colorItem {
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+}
+
+.dataOption {
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    .uploadBtn,
+    .downBtn {
+      width: calc(50% - 3px);
+      & > div {
+        width: 100%;
+      }
+      button {
+        color: var(--theme-text);
+        width: 100%;
+      }
+      a {
+        color: var(--theme-text);
+      }
+    }
+  }
+
+  .coding {
+    margin-top: 20px;
+  }
+}

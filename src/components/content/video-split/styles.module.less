@@ -1,0 +1,98 @@
+.zip {
+  width: 1000px;
+  margin: 20px auto;
+  height: 600px;
+  a {
+    color: var(--theme-text);
+  }
+  .title {
+    text-align: center;
+    color: var(--theme-text);
+    padding: 40px 20px 20px 20px;
+    p {
+      margin: 20px 0;
+      opacity: 0.5;
+    }
+  }
+}
+
+.videoBox{
+  margin-top: 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.videoFrames{
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  height: 80px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+  img{
+    height: 100%;
+    width: auto !important;
+  }
+  
+  .mouseLine{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #007bff;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  .padding{
+    position: absolute;
+    height: 100%;
+    background-color: rgba(229, 255, 0, 0.63);
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+  
+  .markerLine{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ff0000;
+    z-index: 5;
+    pointer-events: none;
+    
+    .markerDelete{
+      position: absolute;
+      top: 20px;
+      left: -8px;
+      width: 16px;
+      height: 16px;
+      background-color: #ff0000;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 20;
+      pointer-events: auto;
+      
+      &:hover{
+        background-color: #cc0000;
+      }
+    }
+  }
+}
+
+.markerBox{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.markerTime{
+  color: #fff;
+}

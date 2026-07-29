@@ -1,0 +1,85 @@
+.header {
+  height: 60px;
+  padding: 20px;
+}
+
+.empty {
+  margin: 20px;
+  font-size: 14px;
+}
+
+.captions {
+  color: var(--theme-text);
+  height: calc(100% - 60px);
+  overflow: auto;
+  padding: 10px;
+  section {
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid transparent;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      opacity: 0.5;
+    }
+    .times {
+      display: inline-block;
+      font-size: 12px;
+      padding-bottom: 10px;
+    }
+    .index {
+      width: 20px;
+      font-size: 12px;
+    }
+    .btns {
+      opacity: 0;
+      position: absolute;
+      bottom: -20px;
+      z-index: 100;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      &::after {
+        content: '';
+        display: block;
+        width: calc(100% - 10px);
+        left: 0;
+        border-top: 1px dashed var(--theme-main);
+        position: absolute;
+        bottom: 9px;
+        z-index: 0;
+      }
+      & > button {
+        position: relative;
+        z-index: 10;
+        border: 1px solid var(--theme-main);
+        background-color: var(--theme-bg);
+        height: 20px;
+        width: 20px;
+        margin: 0 2px;
+        &:hover {
+          background-color: var(--theme-main);
+        }
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .textarea {
+      width: 100%;
+      // border: 1px solid #ccc;
+      background-color: transparent;
+      font-size: 12px;
+    }
+  }
+
+  .active {
+    border: 1px solid var(--theme-main);
+  }
+}
+
+.aiZiMu {
+  color: var(--theme-text);
+}

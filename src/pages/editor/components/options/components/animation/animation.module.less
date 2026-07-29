@@ -1,0 +1,104 @@
+.animation {
+  height: 100%;
+
+  .types {
+    margin: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    a {
+      background-color: var(--theme-input);
+      padding: 6px 12px;
+      width: 32%;
+      text-align: center;
+      border-radius: 4px;
+      opacity: 0.7;
+    }
+    .active {
+      opacity: 1;
+      background-color: var(--theme-main);
+      color: #fff;
+    }
+  }
+  .duration {
+    margin: 20px 10px 20px 20px;
+    .space {
+      margin-bottom: 20px;
+    }
+  }
+
+  .list {
+    width: 100%;
+    .itemText,
+    .item {
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      position: relative;
+      // overflow: hidden;
+      text-align: center;
+      // border: 4px solid transparent;
+      cursor: pointer;
+      // background-image: url(/assets/editor-images/animation.png);
+      background-size: 100%;
+      .name {
+        top: 0;
+        left: 0;
+        font-size: 12px;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        color: var(--theme-text);
+        transform: scale(0.8);
+      }
+      .abcText {
+        display: block;
+        font-size: 16px;
+        opacity: 0.5;
+        font-weight: bolder;
+        position: relative;
+        padding: 20px 0;
+        i {
+          display: inline-block;
+          position: relative;
+          font-style: normal;
+          animation-timing-function: linear;
+          animation-duration: 0.5s;
+          animation-iteration-count: 1;
+        }
+      }
+      &:hover {
+        background-image: none!important;
+        .abcText{
+          display: none;
+        }
+        & > div {
+          display: block;
+        }
+      }
+    }
+    .itemText {
+      background-image: none;
+    }
+    .nullItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: none;
+    }
+    .active {
+      border: 3px solid rgb(0, 242, 255);
+    }
+  }
+  .emphasizeAnimationList {
+    height: calc(100% - 300px);
+  }
+}
+
+.contents {
+  height: calc(100% - 70px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

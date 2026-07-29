@@ -1,0 +1,58 @@
+.effects {
+  .effect {
+    margin-bottom: 20px;
+    position: relative;
+    .effectName {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 12px;
+      border-bottom-right-radius: 5px;
+    }
+    .switch {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 12px;
+    }
+    .options {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 10px;
+      .optionItem {
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .valset {
+          width: 120px;
+          // overflow: hidden;
+        }
+        .optionName {
+          opacity: 0.6;
+          width: 80px;
+          overflow: hidden;
+          font-size: 10px;
+        }
+        & > a {
+          display: inline-block;
+          width: 14px;
+          height: 24px;
+          margin-left: 10px;
+        }
+      }
+    }
+    img {
+      width: 120px;
+      height: 60px;
+      border-radius: 5px;
+    }
+  }
+}

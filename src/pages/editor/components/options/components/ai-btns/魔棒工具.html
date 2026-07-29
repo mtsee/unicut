@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流畅魔棒抠图</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { padding: 20px; background: #f5f5f5; }
+        .tools { display: flex; gap: 10px; margin-bottom: 15px; flex-wrap: wrap; }
+        button, input { padding: 8px 12px; border-radius: 4px; border: none; cursor: pointer; }
+        #delBtn { background: #f56c6c; color: white; }
+        #downloadBtn { background: #28a745; color: white; }
+        #undoBtn, #redoBtn { background: #6c757d; color: white; }
+        button:disabled { background: #ccc !important; }
+        .canvas-box { width: 100%; max-width: 1000px; margin: 0 auto; }
+        canvas { width: 100%; height: auto; border: 2px solid #333; background: white; }
+    </style>
+</head>
+<body>
+<div class="tools">
+    <input type="file" id="upload" accept="image/*">
+    <span>容差：</span>
+    <input type="range" min="0" max="100" value="45" id="tolerance">
+    <span id="tolNum">45</span>
+    <button id="delBtn" disabled>删除选中</button>
+    <button id="clearBtn">取消选区</button>
+    <button id="undoBtn" disabled>撤销</button>
+    <button id="redoBtn" disabled>重做</button>
+    <button id="downloadBtn">下载</button>
+</div>
+<div class="canvas-box">
+    <canvas id="canvas"></canvas>
+</div>
+
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+const upload = document.getElementById('upload');
+const delBtn = document.getElementById('delBtn');
+const clearBtn = document.getElementById('clearBtn');
+const undoBtn = document.getElementById('undoBtn');
+const redoBtn = document.getElementById('redoBtn');
+const downloadBtn = document.getElementById('downloadBtn');
+const tolerance = document.getElementById('tolerance');
+const tolNum = document.getElementById('tolNum');
+
+let originImgData = null;
+let selectMask = null;
+let tol = 45;
+const MAX_CANVASIZE = 900;
+
+let history = [];
+let redoHistory = [];
+
+tolerance.oninput = () => {
+    tol = +tolerance.value;
+    tolNum.innerText = tol;
+};
+
+// 上传图片 稳定赋值像素数据
+upload.onchange = e => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+        const img = new Image();
+        img.onload = () => {
+            let w = img.width, h = img.height;
+            if(w > MAX_CANVASIZE) { h = h * MAX_CANVASIZE / w; w = MAX_CANVASIZE; }
+            if(h > MAX_CANVASIZE) { w = w * MAX_CANVASIZE / h; h = MAX_CANVASIZE; }
+            canvas.width = w;
+            canvas.height = h;
+            ctx.drawImage(img,0,0,w,h);
+            originImgData = ctx.getImageData(0,0,w,h);
+            selectMask = null;
+            history = [];
+            redoHistory = [];
+            delBtn.disabled = false;
+            updateBtnState();
+        }
+        img.src = ev.target.result;
+    }
+    reader.readAsDataURL(file);
+};
+
+function saveHistoryData(){
+    history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+    if(history.length > 20) history.shift();
+    redoHistory = [];
+    updateBtnState();
+}
+function updateBtnState(){
+    undoBtn.disabled = history.length === 0;
+    redoBtn.disabled = redoHistory.length === 0;
+}
+
+undoBtn.onclick = () => {
+    if(!history.length) return;
+    redoHistory.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+    const last = history.pop();
+    ctx.putImageData(last,0,0);
+    originImgData = last;
+    selectMask = null;
+    updateBtnState();
+};
+redoBtn.onclick = () => {
+    if(!redoHistory.length) return;
+    history.push(ctx.getImageData(0,0,canvas.width,canvas.height));
+    const next = redoHistory.pop();
+    ctx.putImageData(next,0,0);
+    originImgData = next;
+    selectMask = null;
+    updateBtnState();
+};
+
+// 颜色差值计算
+function getColorDiff(r1,g1,b1,r2,g2,b2){
+    return Math.abs(r1-r2) + Math.abs(g1-g2) + Math.abs(b1-b2);
+}
+
+// 高效连通选取 首次正常大范围选中 + 不卡顿
+function fastSelect(sx,sy){
+    const w = canvas.width;
+    const h = canvas.height;
+    const data = originImgData.data;
+    const startIdx = (sy * w + sx) * 4;
+    const tr = data[startIdx], tg = data[startIdx+1], tb = data[startIdx+2];
+
+    const mask = new Uint8Array(w*h);
+    const queue = [[sx,sy]];
+    mask[sy*w+sx] = 1;
+    const dirs = [[-1,0],[1,0],[0,-1],[0,1]];
+
+    while(queue.length){
+        const [x,y] = queue.shift();
+        for(let [dx,dy] of dirs){
+            let nx = x+dx, ny = y+dy;
+            if(nx<0||nx>=w||ny<0||ny>=h) continue;
+            let pos = ny*w+nx;
+            if(mask[pos]) continue;
+            let pidx = pos*4;
+            if(getColorDiff(data[pidx],data[pidx+1],data[pidx+2],tr,tg,tb) <= tol){
+                mask[pos] = 1;
+                queue.push([nx,ny]);
+            }
+        }
+    }
+    return mask;
+}
+
+// 高效绘制选区 减少重绘消耗
+function renderMask(){
+    if(!originImgData) return;
+    ctx.putImageData(originImgData,0,0);
+    if(!selectMask) return;
+    ctx.fillStyle = "rgba(255,0,0,0.3)";
+    ctx.save();
+    const w = canvas.width;
+    const h = canvas.height;
+    for(let y=0;y<h;y++){
+        for(let x=0;x<w;x++){
+            if(selectMask[y*w+x]) ctx.fillRect(x,y,1,1);
+        }
+    }
+    ctx.restore();
+}
+
+// 画布点击
+canvas.onclick = e => {
+    if(!originImgData) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = Math.floor((e.clientX - rect.left) * canvas.width / rect.width);
+    const y = Math.floor((e.clientY - rect.top) * canvas.height / rect.height);
+    selectMask = fastSelect(x,y);
+    renderMask();
+};
+
+clearBtn.onclick = () => {
+    selectMask = null;
+    if(originImgData) ctx.putImageData(originImgData,0,0);
+};
+
+delBtn.onclick = () => {
+    if(!selectMask) return;
+    saveHistoryData();
+    let imgData = ctx.getImageData(0,0,canvas.width,canvas.height);
+    let d = imgData.data;
+    let w = canvas.width;
+    for(let i=0;i<selectMask.length;i++){
+        if(selectMask[i]) d[i*4+3] = 0;
+    }
+    ctx.putImageData(imgData,0,0);
+    originImgData = imgData;
+    selectMask = null;
+};
+
+downloadBtn.onclick = () => {
+    const a = document.createElement('a');
+    a.download = "抠图结果.png";
+    a.href = canvas.toDataURL("image/png");
+    a.click();
+};
+</script>
+</body>
+</html>

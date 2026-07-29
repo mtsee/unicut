@@ -1,0 +1,90 @@
+.zip {
+  width: 1000px;
+  // height: 600px;
+  a {
+    color: var(--theme-text);
+  }
+
+  .title {
+    text-align: center;
+    color: var(--theme-text);
+    padding: 40px 20px 20px 20px;
+    p {
+      margin: 20px 0;
+      opacity: 0.5;
+    }
+  }
+}
+
+.download {
+  text-align: center;
+  padding: 20px;
+  a {
+    display: inline-block;
+    background-color: var(--theme-main);
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+}
+
+.result {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 1);
+  img {
+    max-width: 50%;
+  }
+}
+
+.imageCompare {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  background-color: #000;
+  overflow: hidden;
+  max-height: 1000px;
+
+  .oldImage {
+    width: 100%;
+  }
+  .newImage {
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+    border-right: 4px solid #fff;
+    transition: 1s;
+    // background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    img {
+      // position: relative;
+      // max-width: 100%;
+      // max-height: 100%;
+      // top: 20px;
+      transform-origin: center 0;
+    }
+  }
+
+  .newImageInner {
+    width: 1000px;
+    height: 100%;
+    img {
+      // position: relative;
+      // max-width: 100%;
+      // max-height: 100%;
+      // top: 20px;
+      transform-origin: center 0;
+    }
+  }
+}
+
+.cameraRect {
+  position: absolute;
+  border: 2px dashed #ff4d4f;
+  // background: rgba(255, 77, 79, 0.1);
+  pointer-events: none;
+  z-index: 10;
+}

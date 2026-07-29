@@ -1,0 +1,38 @@
+.canvas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100% - 60px);
+
+  .canvasInner {
+    transition: none;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.canvasInnerDrag {
+  cursor: move;
+}
+
+.move {
+  position: absolute;
+  height: 20px;
+  bottom: 20px;
+  right: 120px;
+  z-index: 100;
+  color: var(--theme-text);
+  :global {
+    .i-icon {
+      height: 20px;
+    }
+  }
+}
+
+// .help {
+//   position: absolute;
+//   bottom: 15px;
+//   right: 30px;
+// }

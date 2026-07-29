@@ -1,0 +1,132 @@
+.tasks {
+  padding: 0 20px;
+  height: 100%;
+  overflow: auto;
+}
+
+.item {
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: var(--theme-bg);
+  border-radius: 10px;
+  position: relative;
+
+  .add {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--theme-main);
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .view {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  video {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .more {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 100;
+  }
+
+  .tip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 100;
+    display: flex;
+    i {
+      margin-left: 5px;
+      margin-top: -2px;
+      font-style: normal;
+    }
+  }
+
+  .info {
+    color: var(--theme-text);
+    span {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date {
+    font-size: 12px;
+    opacity: 0.6;
+    color: var(--theme-text);
+    :global {
+      .i-icon {
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+
+  .btns {
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      color: var(--theme-main);
+      // background-color: var(--theme-main);
+      // border: 1px solid #383939;
+    }
+  }
+
+  .moreBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .rotate {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    animation: rotateFrame 1s linear 0s infinite;
+  }
+}
+
+.downHref {
+  word-break: break-all; /* 任意字符处都可换行 */
+  width: 100%;
+}
+
+@keyframes rotateFrame {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

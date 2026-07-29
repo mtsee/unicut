@@ -1,0 +1,88 @@
+// ========== VIP 主题变量（橙色主题）==========
+@aside-bg: #fff7ed;
+@aside-line-bg: #f2d8bf;
+@line-bg: #f0dfcf;
+@package-border: #f0c28c;
+@package-hover-border: #ff6a32;
+@package-active-border: #ff6a32;
+@package-active-bg: #fffaf5;
+@package-active-shadow: 0 8px 18px rgba(255, 106, 50, 0.12);
+@package-check-bg: #ff6a32;
+
+@import './rechargeCommon.module.less';
+
+// VIP 特有：半透明背景穿透 + 整体美化
+.rechargeModal {
+  :global {
+    .semi-modal {
+      pointer-events: auto;
+    }
+
+    .semi-modal-content {
+      background: linear-gradient(180deg, #fff9f4 0%, #ffffff 100%);
+      border: 1px solid rgba(255, 106, 50, 0.15);
+      box-shadow: 0 20px 60px rgba(255, 106, 50, 0.2);
+    }
+  }
+}
+
+// VIP/SVIP 套餐标签 — 缎带角标风格
+.vipTag,
+.svipTag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px 18px;
+  border-radius: 0 0 12px 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.vipTag {
+  background: linear-gradient(135deg, #ff8a5c 0%, #ff6a32 50%, #f04e23 100%);
+}
+
+.svipTag {
+  background: linear-gradient(135deg, #f5d05e 0%, #e0a82b 40%, #c78d1a 100%);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+// 套餐卡片优化，增加底部空间放赠送标签
+.packages {
+  button {
+    padding-bottom: 42px;
+    background: #fff;
+    transition: all 0.3s ease;
+    border-color: #e8e8e8;
+
+    &:hover {
+      box-shadow: 0 8px 20px rgba(255, 106, 50, 0.12);
+      transform: translateY(-4px);
+      border-color: #ff9d7a;
+    }
+
+    em {
+      margin: 12px 0 4px;
+      font-size: 36px;
+      font-weight: 800;
+    }
+
+    del {
+      margin-bottom: 4px;
+      color: #aaa;
+    }
+  }
+
+  .active {
+    border-color: #ff6a32 !important;
+    background: linear-gradient(180deg, #fffaf6 0%, #fff0ed 100%);
+    box-shadow: 0 0 0 3px rgba(255, 106, 50, 0.15), 0 8px 24px rgba(255, 106, 50, 0.2) !important;
+    transform: translateY(-4px) !important;
+  }
+}

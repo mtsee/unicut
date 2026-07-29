@@ -1,0 +1,23 @@
+.menus {
+  padding: 15px 8px;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.4s;
+    color: var(--theme-text);
+
+    :global {
+      .i-icon {
+        margin-right: 5px;
+        position: relative;
+        top: 3px;
+      }
+    }
+    &:hover {
+      background-color: var(--theme-input);
+    }
+  }
+}

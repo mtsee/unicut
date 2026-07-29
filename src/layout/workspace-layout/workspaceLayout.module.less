@@ -1,0 +1,48 @@
+.workspaceLayout {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+  background-color: var(--theme-bg4);
+  color: var(--theme-text);
+
+  .content {
+    margin: 0 160px;
+    width: calc(100% - 320px);
+    position: relative;
+    z-index: 100;
+  }
+}
+
+.colorbg {
+  width: 0;
+  height: 0;
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  transform-origin: center;
+  transform: scale(1.5);
+  z-index: 0;
+
+  .box1 {
+    position: absolute;
+    left: 135.56px;
+    top: 221.82px;
+    width: 702.44px;
+    height: 702.44px;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(189, 0, 255, 0.25) 0%, rgba(173, 0, 255, 0) 100%);
+  }
+  .box2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 702.44px;
+    height: 702.44px;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 71, 255, 0.25) 0%, rgba(0, 102, 255, 0) 100%);
+  }
+}

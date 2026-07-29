@@ -1,0 +1,147 @@
+import React, { useEffect, useRef, useState } from 'react';
+import styles from './styles.module.less';
+import { Tag, TextArea, RadioGroup, Radio, Select, Image, Button, Slider, Toast } from '@douyinfe/semi-ui';
+import { observer } from 'mobx-react';
+import SourceList from './SourceList';
+import { getClosestVideoRatioEnhanced } from '@pages/editor/tools/tools';
+import { getImageToVideoParams } from './aiConfig';
+import { stores } from '@stores/index';
+// import { StarOne } from '@icon-park/react';
+
+export interface IProps {}
+
+function AiImage(props: IProps) {
+  const { editor } = stores;
+  const [aiAction, setAiAction] = useState('image-to-image');
+  const [count, setCount] = useState(1);
+  const [description, setDescription] = useState('');
+
+  // 获取视频比例
+  // const { ratio } = getClosestVideoRatioEnhanced(editor.data.width, editor.data.height);
+  const [size, setSize] = useState('1K');
+  const sourceListRef = useRef<any>(null);
+
+  const Icon = (props: { size?: number }) => {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        width={props.size || 16}
+        height={props.size || 16}
+        focusable="false"
+        aria-hidden="true"
+      >
+        <path
+          d="M9.68 5.45c.22-1.1 1.8-1.1 2.02 0a8.79 8.79 0 0 0 6.85 6.85c1.1.22 1.1 1.8 0 2.02a8.79 8.79 0 0 0-6.85 6.85c-.22 1.1-1.8 1.1-2.02 0a8.79 8.79 0 0 0-6.85-6.85c-1.1-.22-1.1-1.8 0-2.02a8.79 8.79 0 0 0 6.85-6.85Zm8.48-3.85c.16-.8 1.31-.8 1.48 0a3.54 3.54 0 0 0 2.76 2.76c.8.17.8 1.32 0 1.48a3.54 3.54 0 0 0-2.76 2.76c-.17.8-1.32.8-1.48 0a3.54 3.54 0 0 0-2.76-2.76c-.8-.16-.8-1.31 0-1.48a3.54 3.54 0 0 0 2.76-2.76Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    );
+  };
+
+  // 处理表单提交
+  const handleGenerate = async () => {
+    // 获取参考元素数据
+    const urls = sourceListRef.current?.getURLs() || [];
+
+    // 整合所有表单数据
+    const formData = {
+      aiAction,
+      description,
+      size,
+      count,
+      urls: urls.map(d => d.url),
+    };
+
+    if (formData.urls.length === 0 && aiAction !== 'text-to-image') {
+      Toast.error('图生图必须选择一个参考图');
+      return;
+    }
+
+    // 图生视频
+    const params = await getImageToVideoParams(formData);
+    if (!params) {
+      return;
+    }
+    const [res, err] = await editor.apiServer.createAiTask(params);
+    if (!err) {
+      Toast.success('任务创建成功');
+    } else {
+      Toast.error(err);
+    }
+    console.log('表单数据:', formData);
+    
+    // 这里可以添加后续的生成逻辑，比如调用API等
+  };
+
+  return (
+    <div className={styles.ai + ' scroll'}>
+      <h1>参数设置</h1>
+      <div className={styles.model}>
+        <Select value={aiAction} style={{ width: '100%' }} onChange={setAiAction} placeholder="选择AI类型">
+          <Select.Option value="text-to-image">文生图</Select.Option>
+          <Select.Option value="image-to-image">图生图</Select.Option>
+          <Select.Option value="images-to-image">多图融合</Select.Option>
+        </Select>
+        {/* <div className={styles.desc}>根据输入的文本内容进行</div> */}
+        {aiAction !== 'text-to-image' && (
+          <div className={styles.inner}>
+            <h2>参考元素</h2>
+            <SourceList action={aiAction} limitType="image" ref={sourceListRef} />
+          </div>
+        )}
+        <div className={styles.inner}>
+          <h2>描述信息</h2>
+          <div className={styles.inner}>
+            <TextArea
+              style={{ width: '100%' }}
+              rows={4}
+              placeholder="请输入描述信息"
+              value={description}
+              onChange={setDescription}
+            />
+          </div>
+        </div>
+        <div className={styles.inner}>
+          <h2>尺寸设置</h2>
+          <Select value={size} style={{ width: '100%' }} onChange={setSize} placeholder="选择尺寸">
+            <Select.Option value="1K">1K</Select.Option>
+            <Select.Option value="2K">2K</Select.Option>
+            <Select.Option value="3K">3K</Select.Option>
+            <Select.Option value="4K">4K</Select.Option>
+            {/* <Select.Option value="4:3">4:3</Select.Option> */}
+            {/* <Select.Option value="3:4">3:4</Select.Option> */}
+            {/* <Select.Option value="1:1">1:1</Select.Option> */}
+            {/* <Select.Option value="21:9">21:9</Select.Option> */}
+            {/* <Select.Option value="custom">自定义</Select.Option> */}
+          </Select>
+        </div>
+        <div className={styles.inner}>
+          <h2>生成数量: {count}</h2>
+          {/*@ts-ignore*/}
+          <Slider value={count} min={1} max={10} onChange={setCount}></Slider>
+        </div>
+      </div>
+      <div className={styles.model}>
+        {/* <div className={styles.credit}>
+          <span>
+            预计消耗积分：<em>881</em>
+          </span>
+          <span>
+            剩余：
+            <i>
+              <Icon size={12} />
+              &nbsp; 9881
+            </i>
+          </span>
+        </div> */}
+        <Button icon={<Icon />} block className={styles.btn} theme="solid" type="primary" onClick={handleGenerate}>
+          开始生成
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+export default observer(AiImage);

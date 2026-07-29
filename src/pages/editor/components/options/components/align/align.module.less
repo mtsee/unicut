@@ -1,0 +1,48 @@
+.align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  :global {
+    .semi-input-number {
+      width: calc(50% - 3px);
+    }
+  }
+}
+
+.flipOffset {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flipOffsetTitle {
+  font-size: 12px;
+  color: var(--semi-color-text-2);
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.flipOffsetRow {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+  :global {
+    .semi-input-number {
+      flex: 1;
+    }
+  }
+}
+
+.flipOffsetLabel {
+  font-size: 12px;
+  color: var(--semi-color-text-2);
+  width: 14px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,32 @@
+@sideWidth: 100x;
+@scaleHeight: 24px;
+@radius: 4px;
+
+.top {
+  height: @scaleHeight;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  .cursor {
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 24px;
+    background-color: var(--theme-timeline-cursor);
+    margin-left: -5px;
+    top: 0;
+    left: 0;
+    cursor: move;
+    border-radius: 0 0 10px 10px;
+    &::after {
+      position: relative;
+      left: 5px;
+      display: block;
+      content: '';
+      height: 1000px;
+      width: 2px;
+      background-color: var(--theme-timeline-cursor);
+    }
+  }
+}

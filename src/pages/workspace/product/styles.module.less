@@ -1,0 +1,49 @@
+.item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-wateritem);
+}
+
+.content {
+  min-height: 100vh;
+  padding: 30px;
+
+  .contents {
+    margin-top: 20px;
+    display: grid;
+    width: 100%;
+    grid-gap: 24px 16px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--theme-text);
+
+    h1 {
+      font-size: 24px;
+      font-weight: bolder;
+      align-items: center;
+    }
+
+    .cates {
+      align-items: center;
+      margin-left: 30px;
+      font-size: 18px;
+      color: var(--theme-text);
+      a {
+        color: var(--theme-main);
+      }
+      :global {
+        .i-icon {
+          opacity: 0.5;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}

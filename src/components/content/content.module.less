@@ -1,0 +1,118 @@
+.content {
+  // padding: 30px;
+  // min-height: 100vh;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--theme-text);
+
+    h1 {
+      font-size: 24px;
+      font-weight: bolder;
+      align-items: center;
+    }
+
+    .cates {
+      align-items: center;
+      margin-left: 30px;
+      font-size: 18px;
+      color: var(--theme-text);
+      a {
+        color: var(--theme-main);
+      }
+      :global {
+        .i-icon {
+          opacity: 0.5;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+  }
+}
+
+.contents {
+  margin-top: 20px;
+  // padding-top: 20px;
+  overflow: auto;
+  position: relative;
+}
+
+.selectedManager {
+  position: fixed;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 100;
+  background-color: var(--theme-bg);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menus {
+  padding: 15px 8px;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.4s;
+    color: var(--theme-text);
+
+    :global {
+      .i-icon {
+        margin-right: 5px;
+        position: relative;
+        top: 3px;
+      }
+    }
+    &:hover {
+      background-color: var(--theme-input);
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+
+  :global {
+    .semi-page-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      &-active {
+        background: #0066ff;
+        border-color: #0066ff;
+        color: #fff;
+      }
+    }
+
+    .semi-page-prev,
+    .semi-page-next {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+      }
+
+      &.semi-page-item-disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

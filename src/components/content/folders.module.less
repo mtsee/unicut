@@ -1,0 +1,52 @@
+.folders {
+  // margin: 20px 0;
+  margin-top: 20px;
+  max-height: 240px;
+  overflow-y: auto;
+  .folderItem {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 110px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    :global {
+      .semi-checkbox {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+    }
+    input {
+      display: block;
+      text-overflow: ellipsis;
+      text-align: center;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      font-size: 12px;
+      background-color: transparent;
+      border: none;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: var(--theme-text);
+      &:focus {
+        border: 1px solid #000;
+      }
+    }
+    :global {
+      .semi-checkbox {
+        display: none;
+      }
+    }
+    &:hover {
+      background-color: var(--theme-input);
+      :global {
+        .semi-checkbox {
+          display: flex;
+        }
+      }
+    }
+  }
+}

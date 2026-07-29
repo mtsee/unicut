@@ -1,0 +1,70 @@
+.header {
+  // padding: 0 20px;
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  section {
+    display: flex;
+    align-items: center;
+  }
+  .left {
+    position: relative;
+    z-index: 300;
+    a {
+      margin-right: 20px;
+    }
+  }
+  .right {
+    position: relative;
+    z-index: 300;
+    button {
+      margin-right: 10px;
+    }
+  }
+
+  .languagebtn {
+    margin-right: 10px;
+    font-size: 12px;
+    color: var(--theme-text);
+  }
+
+  // .center {
+  //   .title {
+  //     margin-left: 150px;
+  //     text-align: center;
+  //     width: 300px;
+  //     background: transparent;
+  //     border: none;
+  //     font-size: 14px;
+  //     color: var(--theme-text);
+  //   }
+  // }
+
+  .title {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: var(--theme-text);
+    padding: 4px 6px;
+    border-radius: 100px;
+    width: 160px;
+    transition: 0.5s;
+    &:hover {
+      background: var(--theme-input);
+    }
+  }
+
+  .openVipButton {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+  }
+
+  .login {
+    background: linear-gradient(45deg, #00e9fa 0%, #8b20fb 51%, #bb00fa 100%);
+    &:hover {
+      background: linear-gradient(60deg, #00e9fa 0%, #8b20fb 51%, #bb00fa 100%) !important;
+    }
+  }
+}

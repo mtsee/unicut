@@ -1,0 +1,45 @@
+.drawLine {
+  position: relative;
+  width: 100%;
+  // height: 600px;
+  overflow: auto;
+  text-align: center;
+}
+.penSize {
+  display: inline-block;
+  border-radius: 1000px;
+  background-color: aqua;
+  font-size: 12px;
+}
+
+.tools {
+  position: relative;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  z-index: 991;
+  margin-bottom: 20px;
+  .pen {
+    display: flex;
+    align-items: center;
+    i {
+      font-style: normal;
+      margin-right: 10px;
+    }
+  }
+}
+.canvas {
+  position: absolute;
+  z-index: 990;
+  opacity: 0.5;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mouseMV {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}

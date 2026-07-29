@@ -1,0 +1,1097 @@
+[
+  {
+    "type": "",
+    "name": "通用场景",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Shiny.png",
+    "voice_type": "灿灿/Shiny",
+    "temp": false,
+    "info": "√",
+    "language": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Shiny.mp3"
+  },
+  {
+    "type": "",
+    "name": "清新女声",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/清新女声.png",
+    "voice_type": "zh_female_qingxinnvsheng_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/清新女声.mp3"
+  },
+  {
+    "type": "",
+    "name": "邻家小妹/Lily",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Lily.png",
+    "voice_type": "zh_female_linjia_mars_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Lily.mp3"
+  },
+  {
+    "type": "",
+    "name": "爽快思思/Skye",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Skye.png",
+    "voice_type": "zh_female_shuangkuaisisi_moon_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Skye.mp3"
+  },
+  {
+    "type": "",
+    "name": "温暖阿虎/Alvin",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Alvin.png",
+    "voice_type": "zh_male_wennuanahu_moon_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Alvin.mp3"
+  },
+  {
+    "type": "",
+    "name": "少年梓辛/Brayan",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Brayan.png",
+    "voice_type": "zh_male_shaonianzixin_moon_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Brayan.mp3"
+  },
+  {
+    "type": "",
+    "name": "知性女声",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/知性女声.png",
+    "voice_type": "zh_female_zhixingnvsheng_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/知性女声.mp3"
+  },
+  {
+    "type": "",
+    "name": "清爽男大",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/清爽男大.png",
+    "voice_type": "zh_male_qingshuangnanda_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/清爽男大.mp3"
+  },
+  {
+    "type": "",
+    "name": "邻家女孩",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/邻家女孩.png",
+    "voice_type": "zh_female_linjianvhai_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/邻家女孩.mp3"
+  },
+  {
+    "type": "",
+    "name": "渊博小叔",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/渊博小叔.png",
+    "voice_type": "zh_male_yuanboxiaoshu_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/渊博小叔.mp3"
+  },
+  {
+    "type": "",
+    "name": "阳光青年",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/阳光青年.png",
+    "voice_type": "zh_male_yangguangqingnian_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/阳光青年.mp3"
+  },
+  {
+    "type": "",
+    "name": "甜美小源",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/甜美小源.png",
+    "voice_type": "zh_female_tianmeixiaoyuan_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/甜美小源.mp3"
+  },
+  {
+    "type": "",
+    "name": "清澈梓梓",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/清澈梓梓.png",
+    "voice_type": "zh_female_qingchezizi_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/清澈梓梓.mp3"
+  },
+  {
+    "type": "",
+    "name": "解说小明",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/解说小明.png",
+    "voice_type": "zh_male_jieshuoxiaoming_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/解说小明.mp3"
+  },
+  {
+    "type": "",
+    "name": "开朗姐姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/开朗姐姐.png",
+    "voice_type": "zh_female_kailangjiejie_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/开朗姐姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "邻家男孩",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/邻家男孩.png",
+    "voice_type": "zh_male_linjiananhai_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/邻家男孩.mp3"
+  },
+  {
+    "type": "",
+    "name": "甜美悦悦",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/甜美悦悦.png",
+    "voice_type": "zh_female_tianmeiyueyue_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/甜美悦悦.mp3"
+  },
+  {
+    "type": "",
+    "name": "心灵鸡汤",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/心灵鸡汤.png",
+    "voice_type": "zh_female_xinlingjitang_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/心灵鸡汤.mp3"
+  },
+  {
+    "type": "",
+    "name": "知性温婉",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/知性温婉.png",
+    "voice_type": "ICL_zh_female_zhixingwenwan_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/知性温婉.mp3"
+  },
+  {
+    "type": "",
+    "name": "暖心体贴",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/暖心体贴.png",
+    "voice_type": "ICL_zh_male_nuanxintitie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/暖心体贴.mp3"
+  },
+  {
+    "type": "",
+    "name": "温柔文雅",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/温柔文雅.png",
+    "voice_type": "ICL_zh_female_wenrouwenya_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/温柔文雅.mp3"
+  },
+  {
+    "type": "",
+    "name": "开朗轻快",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/开朗轻快.png",
+    "voice_type": "ICL_zh_male_kailangqingkuai_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/开朗轻快.mp3"
+  },
+  {
+    "type": "",
+    "name": "活泼爽朗",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/活泼爽朗.png",
+    "voice_type": "ICL_zh_male_huoposhuanglang_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/活泼爽朗.mp3"
+  },
+  {
+    "type": "",
+    "name": "率真小伙",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/率真小伙.png",
+    "voice_type": "ICL_zh_male_shuaizhenxiaohuo_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/率真小伙.mp3"
+  },
+  {
+    "type": "",
+    "name": "多语种",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Smith.png",
+    "voice_type": "Smith",
+    "temp": false,
+    "info": "√",
+    "language": "英式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Smith.mp3"
+  },
+  {
+    "type": "",
+    "name": "Anna",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Anna.png",
+    "voice_type": "en_female_anna_mars_bigtts",
+    "temp": false,
+    "info": "英式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Anna.mp3"
+  },
+  {
+    "type": "",
+    "name": "Adam",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Adam.png",
+    "voice_type": "en_male_adam_mars_bigtts",
+    "temp": false,
+    "info": "美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Adam.mp3"
+  },
+  {
+    "type": "",
+    "name": "Sarah",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Sarah.png",
+    "voice_type": "en_female_sarah_mars_bigtts",
+    "temp": false,
+    "info": "澳洲英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Sarah.mp3"
+  },
+  {
+    "type": "",
+    "name": "Dryw",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Dryw.png",
+    "voice_type": "en_male_dryw_mars_bigtts",
+    "temp": false,
+    "info": "澳洲英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Dryw.mp3"
+  },
+  {
+    "type": "",
+    "name": "かずね（和音）/Javier or Álvaro",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/和音.png",
+    "voice_type": "multi_male_jingqiangkanye_moon_bigtts",
+    "temp": false,
+    "info": "日语、西语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/和音.mp3"
+  },
+  {
+    "type": "",
+    "name": "はるこ（晴子）/Esmeralda",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Esmeralda.png",
+    "voice_type": "multi_female_shuangkuaisisi_moon_bigtts",
+    "temp": false,
+    "info": "日语、西语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Esmeralda.mp3"
+  },
+  {
+    "type": "",
+    "name": "ひろし（広志）/Roberto",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Roberto.png",
+    "voice_type": "multi_male_wanqudashu_moon_bigtts",
+    "temp": false,
+    "info": "日语、西语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Roberto.mp3"
+  },
+  {
+    "type": "",
+    "name": "あけみ（朱美）",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/朱美.png",
+    "voice_type": "multi_female_gaolengyujie_moon_bigtts",
+    "temp": false,
+    "info": "日语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/朱美.mp3"
+  },
+  {
+    "type": "",
+    "name": "趣味口音",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Harmony.png",
+    "voice_type": "京腔侃爷/Harmony",
+    "temp": false,
+    "info": "√",
+    "language": "中文-北京口音、英文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Harmony.mp3"
+  },
+  {
+    "type": "",
+    "name": "湾湾小何",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/湾湾小何.png",
+    "voice_type": "zh_female_wanwanxiaohe_moon_bigtts",
+    "temp": false,
+    "info": "中文-台湾口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/湾湾小何.mp3"
+  },
+  {
+    "type": "",
+    "name": "湾区大叔",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/湾区大叔.png",
+    "voice_type": "zh_female_wanqudashu_moon_bigtts",
+    "temp": false,
+    "info": "中文-广东口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/湾区大叔.mp3"
+  },
+  {
+    "type": "",
+    "name": "呆萌川妹",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/呆萌川妹.png",
+    "voice_type": "zh_female_daimengchuanmei_moon_bigtts",
+    "temp": false,
+    "info": "中文-四川口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/呆萌川妹.mp3"
+  },
+  {
+    "type": "",
+    "name": "广州德哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/广州德哥.png",
+    "voice_type": "zh_male_guozhoudege_moon_bigtts",
+    "temp": false,
+    "info": "中文-广东口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/广州德哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "北京小爷",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/北京小爷.png",
+    "voice_type": "zh_male_beijingxiaoye_moon_bigtts",
+    "temp": false,
+    "info": "中文-北京口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/北京小爷.mp3"
+  },
+  {
+    "type": "",
+    "name": "浩宇小哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/浩宇小哥.png",
+    "voice_type": "zh_male_haoyuxiaoge_moon_bigtts",
+    "temp": false,
+    "info": "中文-青岛口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/浩宇小哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "广西远舟",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/广西远舟.png",
+    "voice_type": "zh_male_guangxiyuanzhou_moon_bigtts",
+    "temp": false,
+    "info": "中文-广西口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/广西远舟.mp3"
+  },
+  {
+    "type": "",
+    "name": "妹坨洁儿",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/妹坨洁儿.png",
+    "voice_type": "zh_female_meituojieer_moon_bigtts",
+    "temp": false,
+    "info": "中文-长沙口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/妹坨洁儿.mp3"
+  },
+  {
+    "type": "",
+    "name": "豫州子轩",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/豫州子轩.png",
+    "voice_type": "zh_male_yuzhouzixuan_moon_bigtts",
+    "temp": false,
+    "info": "中文-河南口音",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/豫州子轩.mp3"
+  },
+  {
+    "type": "",
+    "name": "角色扮演",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/奶气萌娃.png",
+    "voice_type": "奶气萌娃",
+    "temp": false,
+    "info": "√",
+    "language": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/奶气萌娃.mp3"
+  },
+  {
+    "type": "",
+    "name": "婆婆",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/婆婆.png",
+    "voice_type": "zh_female_popo_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/婆婆.mp3"
+  },
+  {
+    "type": "",
+    "name": "高冷御姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/高冷御姐.png",
+    "voice_type": "zh_female_gaolengyujie_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/高冷御姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "傲娇霸总",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/傲娇霸总.png",
+    "voice_type": "zh_male_aojiaobazong_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/傲娇霸总.mp3"
+  },
+  {
+    "type": "",
+    "name": "魅力女友",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/魅力女友.png",
+    "voice_type": "zh_female_meilinvyou_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/魅力女友.mp3"
+  },
+  {
+    "type": "",
+    "name": "深夜播客",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/深夜播客.png",
+    "voice_type": "zh_male_shenyeboke_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/深夜播客.mp3"
+  },
+  {
+    "type": "",
+    "name": "柔美女友",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/柔美女友.png",
+    "voice_type": "zh_female_sajiaonvyou_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/柔美女友.mp3"
+  },
+  {
+    "type": "",
+    "name": "撒娇学妹",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/撒娇学妹.png",
+    "voice_type": "zh_female_yuanqinvyou_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/撒娇学妹.mp3"
+  },
+  {
+    "type": "",
+    "name": "病弱少女",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病弱少女.png",
+    "voice_type": "ICL_zh_female_bingruoshaonv_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病弱少女.mp3"
+  },
+  {
+    "type": "",
+    "name": "活泼女孩",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/活泼女孩.png",
+    "voice_type": "ICL_zh_female_huoponvhai_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/活泼女孩.mp3"
+  },
+  {
+    "type": "",
+    "name": "东方浩然",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/东方浩然.png",
+    "voice_type": "zh_male_dongfanghaoran_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/东方浩然.mp3"
+  },
+  {
+    "type": "",
+    "name": "绿茶小哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/绿茶小哥.png",
+    "voice_type": "ICL_zh_male_lvchaxiaoge_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/绿茶小哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "娇弱萝莉",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/娇弱萝莉.png",
+    "voice_type": "ICL_zh_female_jiaoruoluoli_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/娇弱萝莉.mp3"
+  },
+  {
+    "type": "",
+    "name": "冷淡疏离",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/冷淡疏离.png",
+    "voice_type": "ICL_zh_male_lengdanshuli_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/冷淡疏离.mp3"
+  },
+  {
+    "type": "",
+    "name": "憨厚敦实",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/憨厚敦实.png",
+    "voice_type": "ICL_zh_male_hanhoudunshi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/憨厚敦实.mp3"
+  },
+  {
+    "type": "",
+    "name": "傲气凌人",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/傲气凌人.png",
+    "voice_type": "ICL_zh_male_aiqilingren_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/傲气凌人.mp3"
+  },
+  {
+    "type": "",
+    "name": "活泼刁蛮",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/活泼刁蛮.png",
+    "voice_type": "ICL_zh_female_huopodiaoman_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/活泼刁蛮.mp3"
+  },
+  {
+    "type": "",
+    "name": "固执病娇",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/固执病娇.png",
+    "voice_type": "ICL_zh_male_guzhibingjiao_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/固执病娇.mp3"
+  },
+  {
+    "type": "",
+    "name": "撒娇粘人",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/撒娇粘人.png",
+    "voice_type": "ICL_zh_male_sajiaonianren_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/撒娇粘人.mp3"
+  },
+  {
+    "type": "",
+    "name": "傲慢娇声",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/傲慢娇声.png",
+    "voice_type": "ICL_zh_female_aomanjiaosheng_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/傲慢娇声.mp3"
+  },
+  {
+    "type": "",
+    "name": "潇洒随性",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/潇洒随性.png",
+    "voice_type": "ICL_zh_male_xiaosasuixing_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/潇洒随性.mp3"
+  },
+  {
+    "type": "",
+    "name": "腹黑公子",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/腹黑公子.png",
+    "voice_type": "ICL_zh_male_fuheigongzi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/腹黑公子.mp3"
+  },
+  {
+    "type": "",
+    "name": "诡异神秘",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/诡异神秘.png",
+    "voice_type": "ICL_zh_male_guiyishenmi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/诡异神秘.mp3"
+  },
+  {
+    "type": "",
+    "name": "儒雅才俊",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/儒雅才俊.png",
+    "voice_type": "ICL_zh_male_ruyacaijun_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/儒雅才俊.mp3"
+  },
+  {
+    "type": "",
+    "name": "病娇白莲",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病娇白莲.png",
+    "voice_type": "ICL_zh_male_bingjiaobailian_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病娇白莲.mp3"
+  },
+  {
+    "type": "",
+    "name": "正直青年",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/正直青年.png",
+    "voice_type": "ICL_zh_male_zhengzhiqingnian_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/正直青年.mp3"
+  },
+  {
+    "type": "",
+    "name": "娇憨女王",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/娇憨女王.png",
+    "voice_type": "ICL_zh_female_jiaohannvwang_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/娇憨女王.mp3"
+  },
+  {
+    "type": "",
+    "name": "病娇萌妹",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病娇萌妹.png",
+    "voice_type": "ICL_zh_female_bingjiaomengmei_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病娇萌妹.mp3"
+  },
+  {
+    "type": "",
+    "name": "青涩小生",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/青涩小生.png",
+    "voice_type": "ICL_zh_male_qingsenaigou_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/青涩小生.mp3"
+  },
+  {
+    "type": "",
+    "name": "纯真学弟",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/纯真学弟.png",
+    "voice_type": "ICL_zh_male_chunzhenxuedi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/纯真学弟.mp3"
+  },
+  {
+    "type": "",
+    "name": "暖心学姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/暖心学姐.png",
+    "voice_type": "ICL_zh_female_nuanxinxuejie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/暖心学姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "可爱女生",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/可爱女生.png",
+    "voice_type": "ICL_zh_female_keainvsheng_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/可爱女生.mp3"
+  },
+  {
+    "type": "",
+    "name": "成熟姐姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/成熟姐姐.png",
+    "voice_type": "ICL_zh_female_chengshujiejie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/成熟姐姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "病娇姐姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病娇姐姐.png",
+    "voice_type": "ICL_zh_female_bingjiaojiejie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病娇姐姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "优柔帮主",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/优柔帮主.png",
+    "voice_type": "ICL_zh_male_youroubangzhu_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/优柔帮主.mp3"
+  },
+  {
+    "type": "",
+    "name": "优柔公子",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/优柔公子.png",
+    "voice_type": "ICL_zh_male_yourougongzi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/优柔公子.mp3"
+  },
+  {
+    "type": "",
+    "name": "妩媚御姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/妩媚御姐.png",
+    "voice_type": "ICL_zh_female_wumeiyujie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/妩媚御姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "调皮公主",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/调皮公主.png",
+    "voice_type": "ICL_zh_female_tiaopigongzhu_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/调皮公主.mp3"
+  },
+  {
+    "type": "",
+    "name": "傲娇女友",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/傲娇女友.png",
+    "voice_type": "ICL_zh_female_aojiaonvyou_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/傲娇女友.mp3"
+  },
+  {
+    "type": "",
+    "name": "贴心男友",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/贴心男友.png",
+    "voice_type": "ICL_zh_male_tiexinnanyou_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/贴心男友.mp3"
+  },
+  {
+    "type": "",
+    "name": "少年将军",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/少年将军.png",
+    "voice_type": "ICL_zh_male_shaonianjiangjun_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/少年将军.mp3"
+  },
+  {
+    "type": "",
+    "name": "贴心女友",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/贴心女友.png",
+    "voice_type": "ICL_zh_female_tiexinnvyou_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/贴心女友.mp3"
+  },
+  {
+    "type": "",
+    "name": "病娇哥哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病娇哥哥.png",
+    "voice_type": "ICL_zh_male_bingjiaogege_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病娇哥哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "学霸男同桌",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/学霸男同桌.png",
+    "voice_type": "ICL_zh_male_xuebanantongzhuo_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/学霸男同桌.mp3"
+  },
+  {
+    "type": "",
+    "name": "幽默叔叔",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/幽默叔叔.png",
+    "voice_type": "ICL_zh_male_youmoshushu_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/幽默叔叔.mp3"
+  },
+  {
+    "type": "",
+    "name": "性感御姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/性感御姐.png",
+    "voice_type": "ICL_zh_female_xingganyujie_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/性感御姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "假小子",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/假小子.png",
+    "voice_type": "ICL_zh_female_jiaxiaozi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/假小子.mp3"
+  },
+  {
+    "type": "",
+    "name": "冷峻上司",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/冷峻上司.png",
+    "voice_type": "ICL_zh_male_lengjunshangsi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/冷峻上司.mp3"
+  },
+  {
+    "type": "",
+    "name": "温柔男同桌",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/温柔男同桌.png",
+    "voice_type": "ICL_zh_male_wenrounantongzhuo_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/温柔男同桌.mp3"
+  },
+  {
+    "type": "",
+    "name": "病娇弟弟",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/病娇弟弟.png",
+    "voice_type": "ICL_zh_male_bingjiaodidi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/病娇弟弟.mp3"
+  },
+  {
+    "type": "",
+    "name": "幽默大爷",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/幽默大爷.png",
+    "voice_type": "ICL_zh_male_youmodaye_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/幽默大爷.mp3"
+  },
+  {
+    "type": "",
+    "name": "傲慢少爷",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/傲慢少爷.png",
+    "voice_type": "ICL_zh_male_aomanshaoye_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/傲慢少爷.mp3"
+  },
+  {
+    "type": "",
+    "name": "神秘法师",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/神秘法师.png",
+    "voice_type": "ICL_zh_male_shenmifashi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/神秘法师.mp3"
+  },
+  {
+    "type": "",
+    "name": "视频配音",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/和蔼奶奶.png",
+    "voice_type": "和蔼奶奶",
+    "temp": false,
+    "info": "√",
+    "language": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/和蔼奶奶.mp3"
+  },
+  {
+    "type": "",
+    "name": "邻居阿姨",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/邻居阿姨.png",
+    "voice_type": "ICL_zh_female_linjuayi_tob",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/邻居阿姨.mp3"
+  },
+  {
+    "type": "",
+    "name": "温柔小雅",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/温柔小雅.png",
+    "voice_type": "zh_female_wenrouxiaoya_moon_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/温柔小雅.mp3"
+  },
+  {
+    "type": "",
+    "name": "天才童声",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/天才童声.png",
+    "voice_type": "zh_male_tiancaitongsheng_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/天才童声.mp3"
+  },
+  {
+    "type": "",
+    "name": "猴哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/猴哥.png",
+    "voice_type": "zh_male_sunwukong_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/猴哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "熊二",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/熊二.png",
+    "voice_type": "zh_male_xionger_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/熊二.mp3"
+  },
+  {
+    "type": "",
+    "name": "佩奇猪",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/佩奇猪.png",
+    "voice_type": "zh_female_peiqi_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/佩奇猪.mp3"
+  },
+  {
+    "type": "",
+    "name": "武则天",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/武则天.png",
+    "voice_type": "zh_female_wuzetian_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/武则天.mp3"
+  },
+  {
+    "type": "",
+    "name": "顾姐",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/顾姐.png",
+    "voice_type": "zh_female_gujie_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/顾姐.mp3"
+  },
+  {
+    "type": "",
+    "name": "樱桃丸子",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/樱桃丸子.png",
+    "voice_type": "zh_female_yingtaowanzi_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/樱桃丸子.mp3"
+  },
+  {
+    "type": "",
+    "name": "广告解说",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/广告解说.png",
+    "voice_type": "zh_male_chunhui_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/广告解说.mp3"
+  },
+  {
+    "type": "",
+    "name": "少儿故事",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/少儿故事.png",
+    "voice_type": "zh_female_shaoergushi_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/少儿故事.mp3"
+  },
+  {
+    "type": "",
+    "name": "四郎",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/四郎.png",
+    "voice_type": "zh_male_silang_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/四郎.mp3"
+  },
+  {
+    "type": "",
+    "name": "磁性解说男声/Morgan",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Morgan.png",
+    "voice_type": "zh_male_jieshuonansheng_mars_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Morgan.mp3"
+  },
+  {
+    "type": "",
+    "name": "鸡汤妹妹/Hope",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Hope.png",
+    "voice_type": "zh_female_jitangmeimei_mars_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Hope.mp3"
+  },
+  {
+    "type": "",
+    "name": "贴心女声/Candy",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Candy.png",
+    "voice_type": "zh_female_tiexinnvsheng_mars_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Candy.mp3"
+  },
+  {
+    "type": "",
+    "name": "俏皮女声",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/俏皮女声.png",
+    "voice_type": "zh_female_qiaopinvsheng_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/俏皮女声.mp3"
+  },
+  {
+    "type": "",
+    "name": "萌丫头/Cutey",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/Cutey.png",
+    "voice_type": "zh_female_mengyatou_mars_bigtts",
+    "temp": false,
+    "info": "中文、美式英语",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/Cutey.mp3"
+  },
+  {
+    "type": "",
+    "name": "有声阅读",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/悬疑解说.png",
+    "voice_type": "悬疑解说",
+    "temp": false,
+    "info": "√",
+    "language": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/悬疑解说.mp3"
+  },
+  {
+    "type": "",
+    "name": "儒雅青年",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/儒雅青年.png",
+    "voice_type": "zh_male_ruyaqingnian_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/儒雅青年.mp3"
+  },
+  {
+    "type": "",
+    "name": "霸气青叔",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/霸气青叔.png",
+    "voice_type": "zh_male_baqiqingshu_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/霸气青叔.mp3"
+  },
+  {
+    "type": "",
+    "name": "擎苍",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/擎苍.png",
+    "voice_type": "zh_male_qingcang_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/擎苍.mp3"
+  },
+  {
+    "type": "",
+    "name": "活力小哥",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/活力小哥.png",
+    "voice_type": "zh_male_yangguangqingnian_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/活力小哥.mp3"
+  },
+  {
+    "type": "",
+    "name": "古风少御",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/俏皮女声.png",
+    "voice_type": "zh_female_gufengshaoyu_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/古风少御.mp3"
+  },
+  {
+    "type": "",
+    "name": "温柔淑女",
+    "avatar": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/avatar/温柔淑女.png",
+    "voice_type": "zh_female_wenroushunv_mars_bigtts",
+    "temp": false,
+    "info": "中文",
+    "audio": "https://lf3-static.bytednsdoc.com/obj/eden-cn/lm_hz_ihsph/ljhwZthlaukjlkulzlp/portal/bigtts/short_trial_url/温柔淑女.mp3"
+  }
+]

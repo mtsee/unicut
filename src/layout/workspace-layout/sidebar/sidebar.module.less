@@ -1,0 +1,105 @@
+.sidebar {
+  width: 60px;
+  overflow: auto;
+  border-right: 1px solid var(--theme-border);
+  color: var(--theme-text);
+  background-color: var(--theme-bg);
+  border-radius: 100px;
+  padding: 20px 0;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+
+  .navContainer {
+    flex: 1;
+    overflow-y: auto;
+
+    .navList {
+      .navItem {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        border-radius: 100px;
+        // margin: 0 10px;
+        padding: 0 20px;
+        cursor: pointer;
+        // border-radius: 100px;
+        transition: background-color 0.3s ease;
+
+        :global {
+          .i-icon {
+            height: 19px;
+          }
+        }
+
+        .text {
+          font-size: 14px;
+          margin-left: 12px;
+          color: var(--theme-text);
+        }
+      }
+
+      .active {
+        .navItem {
+          rect,
+          path {
+            stroke: var(--theme-main2);
+            // fill: var(--theme-main);
+          }
+          // background-color: var(--theme-input);
+          // .text {
+          //   color: var(--theme-main);
+          // }
+        }
+      }
+
+    //   .navItem:hover {
+    //     // background-color: var(--theme-input);
+    //   }
+    //   .active {
+    //     .navItem:hover {
+    //       // background-color: var(--theme-input);
+    //     }
+    //   }
+    }
+  }
+
+  .user {
+    align-items: center;
+    padding: 12px 14px;
+    margin-top: auto;
+    cursor: pointer;
+
+    .avatar {
+      position: relative;
+      margin-right: 12px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .name {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--theme-text);
+      }
+
+      .id {
+        opacity: 0.5;
+        font-size: 11px;
+        color: var(--theme-text-light);
+      }
+    }
+  }
+}
+
+.popoverContent{
+  font-size: 14px;
+  color: var(--theme-text);
+}

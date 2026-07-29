@@ -1,0 +1,146 @@
+.loadingMore,
+.noMoreTips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 12px;
+  color: var(--theme-text);
+  path {
+    fill: #fff !important;
+  }
+}
+.loadingMore {
+  & > span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.sourceListWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  :global {
+    .semi-pagination {
+      color: var(--theme-text);
+    }
+    .semi-pagination-item {
+      background: var(--theme-bg2);
+      border-color: var(--theme-border);
+    }
+    .semi-pagination-item-active {
+      background: var(--theme-main);
+      border-color: var(--theme-main);
+    }
+    .semi-pagination-item:hover {
+      background: var(--theme-bg3);
+    }
+    .semi-pagination-total {
+      color: var(--theme-text);
+    }
+    .semi-pagination-quickjump {
+      color: var(--theme-text);
+    }
+  }
+}
+
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  :global {
+    .semi-empty-description {
+      color: var(--theme-text);
+    }
+  }
+}
+
+.item {
+  position: relative;
+  -webkit-user-drag: none;
+
+  img {
+    -webkit-user-drag: none;
+  }
+
+  .checkbox {
+    position: absolute;
+    z-index: 10;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    display: none;
+    :global {
+      .semi-checkbox {
+        top: -2px;
+      }
+    }
+  }
+
+  .preview,
+  .save,
+  .add {
+    position: absolute;
+    z-index: 100;
+    bottom: 5px;
+    right: 5px;
+    background-color: var(--theme-bg2);
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .add {
+    background-color: var(--theme-main);
+  }
+  .add path,
+  .add rect {
+    stroke: #fff;
+  }
+  .preview {
+    right: 30px;
+  }
+  .save {
+    right: 55px;
+  }
+
+  &:hover {
+    .preview,
+    .save,
+    .add {
+      display: flex;
+    }
+    .checkbox {
+      display: block;
+    }
+  }
+
+  .progress {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+}

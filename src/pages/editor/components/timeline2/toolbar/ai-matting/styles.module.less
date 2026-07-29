@@ -1,0 +1,39 @@
+.matting {
+  position: relative;
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    p {
+      font-size: 16px;
+      color: var(--theme-text);
+    }
+  }
+
+  .boxinner {
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    img {
+      max-width: 100%;
+      max-height: 600px;
+      position: relative;
+      cursor: pointer;
+    }
+    canvas {
+      position: absolute;
+      pointer-events: none;
+      z-index: 100;
+      transform-origin: 0 0;
+      top: 0;
+      left: 0;
+    }
+  }
+}

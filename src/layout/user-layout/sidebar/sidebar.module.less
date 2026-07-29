@@ -1,0 +1,72 @@
+.sidebar {
+  width: 240px;
+  // overflow: auto;
+  color: var(--theme-text);
+  position: relative;
+
+  .vip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .avatar {
+    position: absolute;
+    top: -70px;
+    left: 35px;
+    text-align: center;
+    .nickName {
+      display: block;
+      font-size: 14px;
+      color: var(--theme-text);
+      // opacity: 1;
+      font-weight: bolder;
+      margin-top: 5px;
+    }
+    .uid {
+      font-size: 12px;
+      color: var(--theme-text);
+      opacity: 0.5;
+    }
+  }
+
+  .workspace {
+    padding: 0 12px;
+    margin-top: 120px;
+    .title {
+      margin-bottom: 17px;
+      padding-left: 28px;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+    .navList {
+      .navItem {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 28px;
+        border-radius: 6px;
+        cursor: pointer;
+        .text {
+          font-size: 14px;
+          margin-left: 12px;
+          color: var(--theme-text);
+        }
+      }
+      :global {
+        .i-icon {
+          position: relative;
+          top: 3px;
+        }
+      }
+
+      .active {
+        .navItem {
+          background: var(--theme-input);
+        }
+      }
+    }
+  }
+}

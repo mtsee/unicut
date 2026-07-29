@@ -1,0 +1,55 @@
+import {
+  VideoTwo,
+  Pic,
+  TextMessage,
+  TextStyle,
+  Effects,
+  ColorFilter,
+  Music,
+  ChartHistogramOne,
+  InnerShadowBottomLeft,
+  FocusOne,
+} from '@icon-park/react';
+
+export const config = {
+  marginTop: 5,
+  // icon <WeixinFavorites theme="outline" size="24" fill="#000"/>
+  videoIcon: <VideoTwo theme="outline" size="16" fill="var(--theme-icon)" />,
+  imageIcon: <Pic theme="outline" size="16" fill="var(--theme-icon)" />,
+  textIcon: <TextStyle theme="outline" size="16" fill="var(--theme-icon)" />,
+  captionIcon: <TextMessage theme="outline" size="16" fill="var(--theme-icon)" />,
+  effectIcon: <Effects theme="outline" size="16" fill="var(--theme-icon)" />,
+  filterIcon: <ColorFilter theme="outline" size="16" fill="var(--theme-icon)" />,
+  audioIcon: <Music theme="outline" size="16" fill="var(--theme-icon)" />,
+  echartIcon: <ChartHistogramOne theme="outline" size="16" fill="var(--theme-icon)" />,
+  lottieIcon: <InnerShadowBottomLeft theme="outline" size="16" fill="var(--theme-icon)" />,
+  cameraIcon: <FocusOne theme="outline" size="16" fill="var(--theme-icon)" />,
+  // types 宽度
+  sideWidth: 100,
+  // track高度
+  mainTrack: 50,
+  videoTrack: 40,
+  imageTrack: 40,
+  cameraTrack: 24,
+  textTrack: 24,
+  effectTrack: 24,
+  filterTrack: 24,
+  audioTrack: 24,
+  echartTrack: 24,
+  captionTrack: 24,
+  lottieTrack: 24,
+  // 颜色
+  textColor: '#FF9431',
+  captionColor: '#f64600',
+  effectColor: '#417CED',
+  cameraColor: '#1900ff',
+  filterColor: '#C041E0',
+  videoColor: '#6058FF',
+  imageColor: '#6058FF',
+  audioColor: '#2CB25A',
+  echartColor: '#E0415E',
+  lottieColor: '#00ddb3',
+  // 其他
+  borderColor: '#00FFC2',
+  magnetLineColor: '#fe00ff',
+};

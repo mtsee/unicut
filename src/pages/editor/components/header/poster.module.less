@@ -1,0 +1,53 @@
+.capture {
+  height: 240px;
+  padding: 0px;
+  background-color: #4e4e54;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  a {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 10px;
+    right: 10px;
+    border-radius: 4px;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.canvas {
+  position: relative;
+}
+
+.preview {
+  background-color: #4e4e54;
+  width: 100%;
+//   width: calc(100% - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options {
+  width: 300px;
+  position: absolute;
+  background-color: #404040;
+  right: 0;
+  top: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}

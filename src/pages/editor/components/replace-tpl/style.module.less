@@ -1,0 +1,133 @@
+.replaceTpl {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+  .noReplace {
+    color: var(--theme-text);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+  }
+  .item {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--theme-input);
+    height: 120px;
+    vertical-align: top;
+    width: 160px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    .tip {
+      opacity: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      white-space: nowrap; /* 设置为不换行 */
+      transform: translate(-50%, -50%);
+      font-size: 13px;
+      z-index: 200;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: 0.3s;
+      pointer-events: none;
+    }
+    .btn {
+      position: absolute;
+      background-color: var(--theme-input);
+      padding: 4px 6px;
+      font-size: 12px;
+      z-index: 200;
+      color: #fff;
+      border-radius: 4px;
+      right: 5px;
+      top: 5px;
+      span {
+        position: relative;
+        margin-right: 4px;
+        top: 1px;
+      }
+      &:hover {
+        background-color: var(--theme-main);
+      }
+    }
+    .inner {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--theme-text);
+      p {
+        line-height: 20px;
+        font-size: 13px;
+        display: block;
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        margin: 10px;
+        overflow: hidden;
+      }
+    }
+    .name {
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      bottom: 0;
+      font-size: 12px;
+      white-space: nowrap; /* 设置为不换行 */
+      overflow: hidden; /* 超过容器大小时隐藏内容 */
+      text-overflow: ellipsis; /* 显示省略号 */
+      color: var(--theme-text);
+      opacity: 0.5;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 2px;
+    }
+    .time {
+      position: absolute;
+      z-index: 100;
+      top: 5px;
+      left: 5px;
+      color: #fff;
+      background-color: var(--theme-main);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  }
+}
+
+.spinning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  :global {
+    .semi-spin-middle {
+      background-color: var(--theme-bg2);
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+    }
+    .semi-spin-wrapper {
+      font-size: 12px;
+      color: var(--theme-text);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.sidebar {
+  width: 240px;
+  flex-shrink: 0;
+  padding: 20px 12px;
+  background: var(--theme-bg-light);
+  border-right: 1px solid var(--theme-border);
+  color: var(--theme-text);
+  position: sticky;
+  top: 60px;
+  height: fit-content;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+
+  .navList {
+    .navItem {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      margin-bottom: 10px;
+      padding-left: 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      .text {
+        font-size: 14px;
+        color: var(--theme-text);
+      }
+
+      &:hover {
+        background: var(--theme-input);
+      }
+    }
+
+    .active {
+      .navItem {
+        background: var(--theme-input);
+      }
+    }
+  }
+}

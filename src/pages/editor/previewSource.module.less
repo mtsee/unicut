@@ -1,0 +1,24 @@
+.preview {
+  position: absolute;
+  top: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%) translateX(100%);
+  background-color: var(--theme-bg2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  right: 0px;
+  z-index: 200;
+  animation: fadeInUp 0.5s linear 0s;
+  img {
+    max-height: 500px;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,39 @@
+.imgbox {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--theme-text);
+  text-align: center;
+  padding: 20px 0;
+  background-color: var(--theme-bg2);
+}
+
+.history {
+  display: flex;
+  section {
+    margin-right: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+  }
+}
+
+.canvas {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+.img {
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.mouseMV {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
