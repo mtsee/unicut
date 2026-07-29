@@ -22,7 +22,7 @@ export default function Footer(props: IProps) {
               <a href="#">{<Intl name="common_home" />}</a>
             </li>
             <li>
-              <a href="#">{<Intl name="common_about_us" />}</a>
+              <a href="/article/about">{<Intl name="common_about_us" />}</a>
             </li>
             {/* <li>
               <a href="#">VIP特权</a>

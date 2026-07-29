@@ -209,7 +209,7 @@ export default function Home() {
             新一代AI驱动 · 全功能云端剪辑
           </div>
           <h1 className={styles.heroTitle}>
-            无界云剪辑
+            Unicut(无界云剪)
             <br />
             <span className={styles.heroHighlight}>AI驱动</span>的开源视频剪辑工具
           </h1>

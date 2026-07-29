@@ -72,19 +72,14 @@ const Header = (props: IProps) => {
     <div className={styles.header}>
       <div className={styles.logoNav}>
         <Link to="/">
-          {/* <div
+          <div
             className={classNames({
-              [styles.logoen]: languageType === 'en-US',
-              [styles.logo]: languageType === 'zh-CN',
+              [styles.logoen]: true,
             })}
-          ></div>{' '} */}
-          <a className={styles.logoBrand}>
-            <div className={styles.logo}>✂</div>
-            无界云剪辑
-          </a>
+          ></div>
         </Link>
         <div className={styles.nav}>
-          {/* <NavLink
+          <NavLink
             to="/"
             className={styles.text}
             activeClassName={styles.active}
@@ -95,7 +90,7 @@ const Header = (props: IProps) => {
             }}
           >
             <Intl name="common_home" />
-          </NavLink> */}
+          </NavLink>
           {props.navs?.map((item, index) => (
             <a key={index} href={item.to} className={styles.text}>
               {item.name}
@@ -107,9 +102,9 @@ const Header = (props: IProps) => {
           {/* <NavLink to="/tools" className={styles.text} activeClassName={styles.active}>
             <Intl name="common_tools" />
           </NavLink> */}
-          {/* <NavLink to="/article/about" className={styles.text} activeClassName={styles.active}>
+          <NavLink to="/article/about" className={styles.text} activeClassName={styles.active}>
             <Intl name="common_about_us" />
-          </NavLink> */}
+          </NavLink>
           {/* <a
             href={languageType === 'en-US' ? '/docs/en' : '/docs'}
             target="_blank"
@@ -139,7 +134,7 @@ const Header = (props: IProps) => {
               <Box theme="outline" size="20" fill="var(--theme-icon)" />
               素材
             </Link>
-            <Link to="/workspace/draft" className={styles.space + ' ' + styles.active}>
+            <Link to="/workspace/draft" className={styles.space + ' ' + styles.active2}>
               {/* <Intl name="user_workspace" /> */}
               <AllApplication theme="outline" size="20" fill="var(--theme-icon)" />
               项目

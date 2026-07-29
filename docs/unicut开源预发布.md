@@ -1,6 +1,6 @@
 # 重磅预热！UNICUT 开源版即将上线：纯 Web 端 AI 视频剪辑工具，功能比肩桌面端
 
-![编辑器界面](./images/editor.png)
+![编辑器界面](https://cdn.h5ds.com/github/images/editor.png)
 
 做视频剪辑需要下载几个G的客户端？复杂特效需要年付几百块的会员？AI 功能还要单独按次付费？
 

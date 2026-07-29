@@ -23,6 +23,11 @@ const Sidebar = props => {
       path: `/user/message`,
       icon: <AllApplication theme="outline" size="20" fill="var(--theme-icon)" />,
     },
+    {
+      name: '我的积分',
+      path: `/user/credit`,
+      icon: <VipOne theme="outline" size="20" fill="var(--theme-icon)" />,
+    },
     // {
     //   name: '订单记录',
     //   path: `/user/order`,
@@ -35,7 +40,7 @@ const Sidebar = props => {
   }, [pathname]);
 
   return (
-    <div className={styles.sidebar + ' scroll'}>
+    <div className={styles.sidebar}>
       <div className={styles.avatar}>
         <div>
           <VipOne

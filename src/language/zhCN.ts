@@ -21,7 +21,7 @@ export const zhCN = {
   sidemenu_more: '更多',
 
   // 公共
-  common_name: '无界云剪',
+  common_name: 'Unicut',
   common_search: '搜索',
   common_loading: '加载中...',
   common_uploading: '上传中...',
@@ -409,7 +409,7 @@ export const zhCN = {
   common_home: '首页',
   common_navigation: '导航',
   common_about_us_info:
-    '无界云剪是一款在线的B/S视频剪辑工具，无需下载安装，直接登录即可使用，支持大量的云素材和特效，也支持多人协同剪辑。',
+    'Unicut是一款在线的B/S视频剪辑工具，无需下载安装，直接登录即可使用，支持大量的云素材和特效，也支持多人协同剪辑。',
   common_support: '支持',
   common_help_center: '帮助中心',
   common_privacy_policy: '隐私协议',
@@ -508,7 +508,7 @@ export const zhCN = {
   user_message_read: '已读',
   user_message_new: 'NEW',
   tools_title: '在线工具',
-  tools_desc: '无界云剪提供了大量的视频工具帮助你快速完成工作',
+  tools_desc: 'Unicut提供了大量的视频工具帮助你快速完成工作',
   ai_matting: 'AI抠图',
   ai_matting_desc: '点击要扣取的元素，可以快速扣出图片中的任何元素',
   ai_upload_tip: '点击上传图片文件或拖拽文件到这里',
@@ -645,7 +645,7 @@ export const zhCN = {
   common_no_source: '暂无素材',
   common_no_source_desc: '暂无上传任何素材',
   common_update_log: '更新日志',
-  common_update_log_desc: '查看无界云剪的更新日志',
+  common_update_log_desc: '查看Unicut的更新日志',
   common_delete: '删除',
   common_email: '邮箱',
   common_delete_success: '删除成功！',

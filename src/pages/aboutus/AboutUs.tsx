@@ -5,7 +5,8 @@ import { useEffect, useRef } from 'react';
 import { observer } from 'mobx-react';
 import { layout } from '@stores/layout';
 import Links from './Links';
-import SubHeader from '@components/sub-header/SubHeader';
+import SubHeader from '@components/header/Header';
+import Footer from '@components/footer/Footer';
 import { language } from '@language/language';
 
 const win = window as any;
@@ -25,6 +26,7 @@ function AboutUs(props: IProps) {
   return (
     <div className={styles.about}>
       <SubHeader title={language.val('about_us')} desc={language.val('common_company')} />
+      <div className={styles.bg}></div>
       {language.getLanguage() === 'zh-CN' ? (
         <div className={styles.content}>
           <p>
@@ -65,8 +67,9 @@ function AboutUs(props: IProps) {
           <p>Address: Room C-808, Meinian Plaza, Tianfu 5th Street, High-Tech Zone, Chengdu</p>
         </div>
       )}
-      <Links />
+      {/* <Links /> */}
       {/* <div ref={ref} className={styles.map}></div> */}
+      <Footer />
     </div>
   );
 }

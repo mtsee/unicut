@@ -1,6 +1,6 @@
 # 和 AI 聊天就能剪视频？UNICUT 的 Agent 模式让剪辑变得像聊天一样简单
 
-![AI 聊天剪辑](./images/chat-ai-to-video.png)
+![AI 聊天剪辑](https://cdn.h5ds.com/github/images/chat-ai-to-video.png)
 
 你有没有过这样的体验：想做一个酷炫的残影拖尾效果，结果在时间轴上复制、调透明度、调时间线，折腾了半小时还没搞定？
 
@@ -91,3 +91,11 @@ AI 不是来替代创作者的，而是来帮你把那些机械、重复的操�
 现在就去 UNICUT 试试 Agent 模式，你对它说的第一句话会是什么？
 
 ***
+
+## 地址汇总
+
+| 项目     | 地址                                   |
+| ------ | ------------------------------------ |
+| 在线体验   | <https://unicut.h5ds.com/>           |
+| GitHub | <https://github.com/mtsee/unicut>    |
+| Gitee  | <https://gitee.com/676015863/unicut> |
