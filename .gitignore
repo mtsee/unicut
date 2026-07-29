@@ -22,4 +22,3 @@ ssh
 *.njsproj
 *.sln
 *.sw?
-/public/assets/ai
