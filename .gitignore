@@ -23,4 +23,3 @@ ssh
 *.sln
 *.sw?
 /public/assets/ai
-/public/assets/ffmpeg
