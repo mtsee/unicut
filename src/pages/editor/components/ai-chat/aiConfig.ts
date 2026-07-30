@@ -2,6 +2,51 @@ import { Toast } from '@douyinfe/semi-ui';
 import { stores } from '@stores/index';
 import { util } from '@utils/index';
 
+// ==================== LLM 模型配置 ====================
+
+interface LLMModelConfig {
+  name: string;
+  modelId: string;
+  provider: string;
+  description?: string;
+}
+
+/** 可用的 LLM 模型列表 */
+export const LLM_MODELS: Record<string, LLMModelConfig> = {
+  'doubao-seed-1-6-251015': {
+    name: '豆包 Seed 1.6',
+    modelId: 'doubao-seed-1-6-251015',
+    provider: 'huoshan',
+    description: '通用大语言模型，用于 AI 对话和指令拆解',
+  },
+  'deepseek-v4-pro-260425': {
+    name: 'Deepseek V4 Pro',
+    modelId: 'deepseek-v4-pro-260425',
+    provider: 'deepseek',
+    description: '专业级大语言模型，用于复杂任务和专业领域',
+  },
+  'deepseek-v4-flash-260425': {
+    name: 'Deepseek V4 Flash',
+    modelId: 'deepseek-v4-flash-260425',
+    provider: 'deepseek',
+    description: '专业级大语言模型，用于复杂任务和专业领域',
+  },
+};
+
+/** 默认 LLM 模型 */
+export const DEFAULT_LLM_MODEL = 'deepseek-v4-pro-260425';
+
+/**
+ * 获取 LLM 模型配置
+ * @param modelId 模型 ID，默认使用 DEFAULT_LLM_MODEL
+ */
+export function getLLMModel(modelId?: string): LLMModelConfig {
+  const id = modelId || DEFAULT_LLM_MODEL;
+  return LLM_MODELS[id] || LLM_MODELS[DEFAULT_LLM_MODEL];
+}
+
+// ==================== 图片/视频生成参数 ====================
+
 // https://www.volcengine.com/docs/82379/1393047
 export async function getImageToVideoParams(formData: Record<string, any>) {
   const { editor } = stores;

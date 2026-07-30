@@ -1,6 +1,7 @@
 import type * as sdkTypes from 'video-core-sdk';
 import { utils, speedHelper } from 'video-core-sdk';
 import type { Editor } from '@stores/editor';
+import { DEFAULT_LLM_MODEL } from './aiConfig';
 
 // ==================== Tool Definitions ====================
 
@@ -1604,7 +1605,7 @@ export async function splitUserCommand(
 
   try {
     const [res, err] = await apiServer.openAiChat({
-      model: 'doubao-seed-1-6-251015',
+      model: DEFAULT_LLM_MODEL,
       messages: [
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userCommand },

@@ -28,6 +28,7 @@ import Decoding from './Decoding';
 import Intl from '@language/Intl';
 import { language } from '@language/language';
 import QrcodeUpload from './QrcodeUpload';
+import LottieItem from '../lottie/LottieItem';
 import { IconTreeTriangleDown } from '@douyinfe/semi-icons';
 import { config } from '@config/index';
 import { stores } from '@stores/index';
@@ -661,6 +662,8 @@ export default function List(props: IProps) {
                     <span className={styles.myAudioItem}>
                       <Like theme="filled" size="60" fill="#FF6B6B" />
                     </span>
+                  ) : d.status !== 'ready' && d.type === 'sticker' ? (
+                    <LottieItem item={d} />
                   ) : (
                     <img
                       src={editor.movie.reURL(d.urls?.thumb || d.thumb)}

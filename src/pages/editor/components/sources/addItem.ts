@@ -103,27 +103,34 @@ export const addImageVideoAudioItem = async (
 export const addLottieItem = async (item: any, insertTime?: number, trackIndex?: number) => {
   console.log('添加元素', item);
   const { editor } = stores;
-  const resource = new ResourceItem({
+  const isLocal = !!item._localPath;
+
+  let resource: ResourceItem | any = new ResourceItem({
     id: utils.createID(),
     originId: item.id,
-    url: item.urls.url,
+    url: isLocal ? item._localPath : item.urls.url,
     name: item.name,
-    fileType: item.urls.url.split('.').pop(),
+    fileType: item.type,
     type: 'lottie',
+    isLocal: isLocal ? true : false,
     mustFetch: true,
-    thumb: item.thumb || item.urls.thumb,
-    frames: item.attrs.frames,
+    thumb: isLocal ? item._thumbPath || '' : item.urls.thumb,
+    frames: isLocal ? item.attrs.frames || '' : item.attrs.frames,
     styleSize: {
-      width: item.attrs.width,
-      height: item.attrs.height,
+      width: Number(item.attrs.width),
+      height: Number(item.attrs.height),
     },
     duration: itemDuration(item),
     from: item.from,
-    extend: { ...item.attrs },
+    attrs: { ...item.attrs },
   });
   console.log('resource', resource);
   // 素材duration保留一位小数
   resource.duration = util.timeToNum(resource.duration);
+  // 本地存储模式：将资源中的相对路径解析为 blob URL
+  if (isLocal && editor.movie?.resourceManage) {
+    await hydrateResourcePaths([resource as any], editor.movie.resourceManage);
+  }
 
   const elementData = await editor.movie.addElementByResource(resource as any, {
     time: insertTime || editor.currentTime,
@@ -499,6 +506,7 @@ export function itemDuration(item: any): number {
 }
 
 export async function addItem(item: any, insertTime: number, trackIndex: number) {
+
   const { editor } = stores;
 
   if (editor.globalLoading) {
@@ -526,6 +534,7 @@ export async function addItem(item: any, insertTime: number, trackIndex: number)
   } else {
     item.from = 'system';
   }
+
   let elem = null;
   switch (item.type) {
     // case 'model3D':

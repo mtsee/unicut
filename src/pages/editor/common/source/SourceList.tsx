@@ -64,7 +64,7 @@ export default function SourceList(props: IProps) {
   }
 
   // 设置缓存数据，用于拖动元素的时候获取数据
-  editor.setActiveItems(items, props.type);
+  editor.setActiveItems(items);
 
   return (
     <div className={styles.sourceListWrapper}>
@@ -79,7 +79,7 @@ export default function SourceList(props: IProps) {
           return (
             <span
               data-type={item.type}
-              data-dragitem={props.type === 'template' ? undefined : item.id + '_' + props.type}
+              data-dragitem={props.type === 'template' ? undefined : item.id + '#' + item.type}
               className={classNames(styles.item, props.itemClassName)}
               onClick={e => {
                 if (props.type === 'template') {

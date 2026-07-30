@@ -8,15 +8,11 @@ import { language, Intl } from '@language/index';
 import { stores } from '@stores/index';
 import { useState } from 'react';
 
-export interface IProps {
-  show: boolean;
-}
-
-function Sources(props: IProps) {
+function Sources() {
   const { editor } = stores;
   const [activeKey, setActiveKey] = useState('1');
   return (
-    <div className={styles.sources} style={{ display: props.show ? 'block' : 'none' }}>
+    <>
       {editor.userInfo ? (
         <Tabs lazyRender={true} className={styles.tabs} type="line" activeKey={activeKey} onChange={setActiveKey}>
           <TabPane tab={language.val('my_tab_material')} itemKey="1">
@@ -47,7 +43,7 @@ function Sources(props: IProps) {
           </span>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

@@ -67,21 +67,21 @@ export default function DragItem(props: IProps) {
       }
       const hasAudio = await util.checkVideoUrlHasAudio(editor.movie.reURL(item.urls.url), item.type);
       // 通过 _localPath 判断资源是否来自本地存储
-      const isLocal = !!(item._localPath);
+      const isLocal = !!item._localPath;
 
       console.log('hasAudio', hasAudio);
       // 添加素材
       const resource = new ResourceItem({
         id: utils.createID(),
         originId: item.id,
-        url: isLocal ? (item._localPath || item.urls.url) : item.urls.url,
+        url: isLocal ? item._localPath || item.urls.url : item.urls.url,
         name: item.name,
         fileType: item.type,
         type: item.type as any,
         isLocal: isLocal ? true : false,
         noAudioTracks: !hasAudio,
         mustFetch: item.type === 'image' ? true : false,
-        thumb: isLocal ? (item._thumbPath || item.urls.thumb) : item.urls.thumb,
+        thumb: isLocal ? item._thumbPath || item.urls.thumb : item.urls.thumb,
         frames: item.attrs.frames,
         wave: item.attrs.wave,
         styleSize: {
@@ -260,7 +260,8 @@ export default function DragItem(props: IProps) {
           await replaceElementById($item.attr('data-id'), d);
         }
       } else {
-        let trackIndex = tempElement.trackIndex;
+        console.log('tempElement', { ...tempElement });
+        let trackIndex = editor.tempInsertIndex + 0.5;
         setElement({
           id: 'temp',
           duration: 5,

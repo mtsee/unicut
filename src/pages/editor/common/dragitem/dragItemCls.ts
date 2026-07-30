@@ -44,10 +44,10 @@ export class DragItemCls {
         if ($(e.target).closest('a')[0]) {
           return;
         }
-        const [id, type] = $(this).attr('data-dragitem').split('_');
-        const item = editor.getFromActiveItems(id, type);
+        const [id, type] = $(this).attr('data-dragitem').split('#');
+        const item = editor.getFromActiveItems(id);
         if (!item) {
-          console.error('数据异常', id, type, this);
+          console.error('数据异常', id, this);
           return;
         }
         self.events.dragstart(item, { x: e.pageX, y: e.pageY }, e);

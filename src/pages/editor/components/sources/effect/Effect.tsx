@@ -5,15 +5,8 @@ import { stores } from '@stores/index';
 // import { editor } from '@stores/index';
 // import { addEffectItem } from '../addItem';
 
-export interface IProps {
-  show: boolean;
-}
-
-export default function Effect(props: IProps) {
+export default function Effect() {
   const { editor } = stores;
-  if (!props.show) {
-    return null;
-  }
 
   return (
     <Source

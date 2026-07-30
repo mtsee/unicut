@@ -8,20 +8,8 @@ import { QrcodeElement } from '@pages/editor/plugins/qrcode/ElementData';
 import { language } from '@language/language';
 import { stores } from '@stores/index';
 
-export interface IProps {
-  show: boolean;
-}
-let hasRender = false;
-
-export default function More(props: IProps) {
+export default function More() {
   const { editor } = stores;
-  if (!hasRender) {
-    if (props.show) {
-      hasRender = true;
-    } else {
-      return null;
-    }
-  }
 
   const addPlus = d => {
     console.log('添加插件', d);
@@ -56,77 +44,75 @@ export default function More(props: IProps) {
   const languageType = language.getLanguage();
 
   return (
-    <div style={{ height: '100%', display: props.show ? 'block' : 'none' }}>
-      <div className={styles.moreList + ' scroll'}>
-        <h1 className={styles.title}>{language.val('more_plus')}</h1>
-        <WaterFull
-          itemWidth={60}
-          itemClassName={styles.waterfull}
-          item={(d: any) => {
-            return (
-              <div
-                onClick={() => {
-                  addPlus(d);
-                }}
-                className={styles.item}
-              >
-                <span>
-                  {d.icon}
-                  <p>
-                    {d.vip && <VipOne theme="filled" size="14" fill="#FFA24D" />}
-                    {languageType === 'zh-CN' ? d.name : d.ename}
-                  </p>
-                </span>
-              </div>
-            );
-          }}
-          list={[
-            {
-              id: 'qrcode',
-              name: '二维码',
-              ename: 'qrcode',
-              icon: <PayCodeOne theme="filled" size="25" fill="var(--theme-icon)" />,
-            },
-            // {
-            //   id: 'magnifyingGlass',
-            //   name: '放大镜',
-            //   icon: <Search theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-            // {
-            //   id: 'chart',
-            //   name: '动态图表',
-            //   vip: true,
-            //   icon: <ChartHistogramOne theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-            // {
-            //   id: 'model3D',
-            //   name: '3D模型',
-            //   vip: true,
-            //   icon: <StereoPerspective theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-            // {
-            //   id: 'peopleKeletonMan',
-            //   name: '人物',
-            //   vip: true,
-            //   icon: <SoccerOne theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-            // {
-            //   id: 'watermark',
-            //   name: '水印',
-            //   vip: true,
-            //   icon: <Audit theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-            // {
-            //   id: 'barrage',
-            //   name: '弹幕',
-            //   vip: true,
-            //   icon: <DanMuIcon theme="filled" size="25" fill="var(--theme-icon)" />,
-            // },
-          ].map(d => {
-            return { ...d, width: 100, height: 100 };
-          })}
-        />
-      </div>
+    <div className={styles.moreList + ' scroll'}>
+      <h1 className={styles.title}>{language.val('more_plus')}</h1>
+      <WaterFull
+        itemWidth={60}
+        itemClassName={styles.waterfull}
+        item={(d: any) => {
+          return (
+            <div
+              onClick={() => {
+                addPlus(d);
+              }}
+              className={styles.item}
+            >
+              <span>
+                {d.icon}
+                <p>
+                  {d.vip && <VipOne theme="filled" size="14" fill="#FFA24D" />}
+                  {languageType === 'zh-CN' ? d.name : d.ename}
+                </p>
+              </span>
+            </div>
+          );
+        }}
+        list={[
+          {
+            id: 'qrcode',
+            name: '二维码',
+            ename: 'qrcode',
+            icon: <PayCodeOne theme="filled" size="25" fill="var(--theme-icon)" />,
+          },
+          // {
+          //   id: 'magnifyingGlass',
+          //   name: '放大镜',
+          //   icon: <Search theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+          // {
+          //   id: 'chart',
+          //   name: '动态图表',
+          //   vip: true,
+          //   icon: <ChartHistogramOne theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+          // {
+          //   id: 'model3D',
+          //   name: '3D模型',
+          //   vip: true,
+          //   icon: <StereoPerspective theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+          // {
+          //   id: 'peopleKeletonMan',
+          //   name: '人物',
+          //   vip: true,
+          //   icon: <SoccerOne theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+          // {
+          //   id: 'watermark',
+          //   name: '水印',
+          //   vip: true,
+          //   icon: <Audit theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+          // {
+          //   id: 'barrage',
+          //   name: '弹幕',
+          //   vip: true,
+          //   icon: <DanMuIcon theme="filled" size="25" fill="var(--theme-icon)" />,
+          // },
+        ].map(d => {
+          return { ...d, width: 100, height: 100 };
+        })}
+      />
     </div>
   );
 }

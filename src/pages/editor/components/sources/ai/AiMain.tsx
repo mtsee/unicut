@@ -9,14 +9,7 @@ import Login from '@components/login';
 import { language, Intl } from '@language/index';
 import { stores } from '@stores/index';
 
-export interface IProps {
-  show: boolean;
-}
-
-export default function AiMain(props: IProps) {
-  if (!props.show) {
-    return null;
-  }
+export default function AiMain() {
   const { editor } = stores;
 
   if (!editor.token) {

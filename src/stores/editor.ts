@@ -216,6 +216,9 @@ export class Editor {
   public copyTempFrameData: any;
   public copyTempFrameDataType: string = '';
 
+  // 记录临时插入的位置
+  public tempInsertIndex: number = null;
+
   // 水印配置
   public watermark?: types.IWatermark;
 
@@ -229,21 +232,16 @@ export class Editor {
   @observable trackBodysKey: string = '1';
 
   // 资源切换后，缓存list数据
-  public activeItems: Record<ctypes.SourceType, SourceItem[]> = {};
+  public activeItems: SourceItem[] = [];
   // 设置缓存数据
-  setActiveItems = (items: SourceItem[], type: ctypes.SourceType) => {
-    this.activeItems[type] = items;
-
-    // 测试用
-    if (!(window as any).activeItems) {
-      (window as any).activeItems = {};
-    }
-    (window as any).activeItems[type] = items;
+  setActiveItems = (items: SourceItem[]) => {
+    this.activeItems = items;
   };
 
   // 从缓存数据中读取数据
-  getFromActiveItems = (id: string, type: ctypes.SourceType) => {
-    const items = this.activeItems[type] || [];
+  getFromActiveItems = (id: string) => {
+    // console.log('getFromActiveItems', id, this.activeItems);
+    const items = this.activeItems || [];
     return items.find(d => d.id === id);
   };
 
@@ -916,7 +914,7 @@ export class Editor {
       this.movie = null;
       this.copyTempData = null;
       this.copyTempFrameData = null;
-      this.activeItems = {};
+      this.activeItems = [];
       this.watermark = null;
       this.previewSource = null;
       this.selectedElementIds = [];

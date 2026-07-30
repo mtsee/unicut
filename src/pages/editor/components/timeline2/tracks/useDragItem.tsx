@@ -333,7 +333,6 @@ export default function useDragItem(params: Params) {
           if (canInsertIndex !== null) {
             $(`.tempInsertDom[data-insertindex="${canInsertIndex}"]`).addClass('tempInsertDomActive');
           }
-          // console.log('canInsertIndex', canInsertIndex);
 
           // canIn可插入判断
           canInIndex = null;
@@ -350,7 +349,8 @@ export default function useDragItem(params: Params) {
           });
         })
         .on('mouseup.timelineDragElement', eu => {
-          console.log('canInsert', canInsertIndex, canInIndex, editor.data);
+          console.log('canInsertIndex------------------------------->', canInsertIndex);
+          editor.tempInsertIndex = canInsertIndex;
           $('.tempInsertDom').remove();
           $(document).off('mousemove.timelineDragElement');
           $(document).off('mouseup.timelineDragElement');

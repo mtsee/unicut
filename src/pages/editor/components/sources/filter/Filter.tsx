@@ -5,15 +5,8 @@ import { stores } from '@stores/index';
 
 // import { addFilterItem } from '../addItem';
 
-export interface IProps {
-  show: boolean;
-}
-
-export default function Filter(props: IProps) {
+export default function Filter() {
   const { editor } = stores;
-  if (!props.show) {
-    return null;
-  }
 
   return (
     <Source

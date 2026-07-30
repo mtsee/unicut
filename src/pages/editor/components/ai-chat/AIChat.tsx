@@ -9,6 +9,7 @@ import type * as st from '@config/sdk.d';
 import { addImageVideoAudioItem } from '../sources/addItem';
 import { getUploadBeforeData } from '../../tools/uploadBeforeData';
 import { getSystemPrompt, parseToolCalls, executeToolCall, splitUserCommand } from './aiMovieEditor';
+import { DEFAULT_LLM_MODEL } from './aiConfig';
 import { getCredits } from './price';
 import ChatMessages from './ChatMessages';
 import type { ChatMessage, MediaContent } from './ChatMessages';
@@ -835,7 +836,7 @@ export default function AIChat() {
           ];
 
           const [res, err] = await editor.apiServer!.openAiChat({
-            model: 'doubao-seed-1-6-251015',
+            model: DEFAULT_LLM_MODEL,
             messages: chatMessages,
           });
 
@@ -865,7 +866,7 @@ export default function AIChat() {
               { role: 'user' as const, content: '请立即使用 <tool_calls> 格式直接执行上述操作，不要只回复文字或计划。' },
             ];
             const [res2, err2] = await editor.apiServer!.openAiChat({
-              model: 'doubao-seed-1-6-251015',
+              model: DEFAULT_LLM_MODEL,
               messages: retryMessages,
             });
 
