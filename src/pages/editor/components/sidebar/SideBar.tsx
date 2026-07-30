@@ -132,7 +132,7 @@ function SideBar(props: ISideBarProps) {
         ) : (
           <a href={editor.exConfig.logoLink || '/workspace/draft'}>
             {/* <img src={editor.exConfig.logo(theme.getTheme())} alt="" /> */}
-            Unicut
+            UniCut
           </a>
         )}
       </span>

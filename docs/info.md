@@ -97,7 +97,5 @@ gitee地址： https://gitee.com/676015863/unicut
 
 # 开源协议
 
-Apache License 2.0 改版
-
 单用户版本免费
-多租户商用授权 6万/永久授权
+多租户需要授权
